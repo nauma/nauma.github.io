@@ -12,7 +12,7 @@ body {
   width: 105%;
   height: 110%;
   margin: -3% -2% -4% -2%;
-  background: url('../images/background.jpeg');
+  background-image: image('../images/background.webp' format('webp'), '../images/background.jpeg');
   background-size: cover;
   position: fixed;
 
