@@ -60,6 +60,6 @@ main p {
 
 @media screen and (max-width: 450px) {
   main {
-    margin: 12% 25%;
+    margin: 12% 25%; 
   }
 }
