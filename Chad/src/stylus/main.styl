@@ -1,0 +1,302 @@
+*
+  padding 0
+  margin 0
+
+a
+  text-decoration none
+  color black
+
+body
+  font-family Verdana, Geneva, Tahoma, sans-serif
+  background #f9f9f9
+
+section#topbar
+  opacity 0
+  width 100%
+  position absolute
+  top 0
+
+  div#menu
+    width 70%
+    margin 40px auto
+    color white
+
+    @media screen and (max-width: 900px)
+      width 90%
+
+    a#openmenu
+      float left
+      color white
+      font-size 21px
+
+      &:hover
+        cursor pointer
+
+    a#opendownload
+      float right
+      padding 10px 15px
+      border 2px solid white
+      border-radius 5px
+      color white
+      font-weight normal
+
+      &:hover
+        cursor pointer
+
+section#board
+  background #71A5DA
+  padding-top 5%
+  padding-bottom -45px
+  text-align center
+  color white
+
+  @media screen and (max-width: 900px)
+    padding-top 100px
+
+  *
+    margin-top 30px
+
+  h1.title
+    opacity 0
+    font-weight normal
+    font-size 50px
+    margin-top 55px
+
+    span.version
+      font-size 20px
+      display inline-block
+
+  div.description
+    margin-top 15px
+    opacity 0
+
+  div.application
+    width: 55%
+    display block
+    margin 30px auto 0px auto 
+    opacity 0
+
+    @media screen and (max-width: 900px)
+      width 80%
+
+    @media screen and (max-width: 600px)
+      width 100%
+
+    img.app
+      width 100%
+      height auto
+
+section#description
+  overflow hidden
+  padding 5% 0
+
+  div#description
+    float left
+    width 40%
+    text-align left
+    padding 10px 5%
+
+    @media screen and (max-width: 800px)
+      width 100%
+      display block
+
+    *
+      display block
+
+    h2.title
+      font-weight normal
+      font-size 30px
+
+    div.description
+      padding 10px 0px
+  
+  div#image
+    float left
+    width 50%
+
+    @media screen and (max-width: 800px)
+      width 100%
+      display block
+
+    img
+      width 100%
+      height auto
+
+section#developers
+  width 100%
+  background #f1f1f1
+  padding 5% 0
+  text-align center
+
+  h2#title
+    font-weight normal
+    text-align center
+    margin-bottom 30px
+
+  #developer
+    display inline-block
+    width 160px
+    margin-top 40px
+    text-align center
+
+    @media screen and (max-width: 500px)
+      display block
+      margin 40px auto
+
+    img.avatar
+      width 100px
+      height 100px
+      border-radius 50%
+
+    h3.name
+      font-weight normal
+      margin-top 5px;
+
+    div.type
+      margin-top 5px
+      font-style italic
+      margin-bottom 20px
+
+    a.github
+      padding 10px;
+      border 1px solid #d9d9d9
+      border-radius 5px
+      margin 15px 0px
+
+section#download
+  background #333
+  padding 5% 0
+  text-align center
+  color white
+
+  transform translate()
+
+  @media screen and (max-width: 600px)
+      padding 25% 0
+
+  a
+    color white
+
+  a.download
+    padding 15px 25px
+    border 2px solid white
+    border-radius 4px
+    margin 50px 0
+
+    &:hover
+      cursor pointer
+
+  div.social
+    margin-top 50px
+    padding 15px 0
+
+    a
+      margin 0px 7px
+      font-size 25px
+
+aside#sidebar
+  position fixed
+  background #333
+  border-right 1px solid #222
+  width 250px
+  float left
+  height 100%
+  color white
+  margin-left -252px
+
+  a
+    color white
+
+  div
+    display block
+    margin 30px 0
+
+  a.close
+    float right
+    margin 10px 15px
+
+    &:hover
+      cursor pointer
+
+  div#logo
+    margin 35px auto
+    width 100px
+    height auto
+
+    a
+      width 100%
+      img
+        width 100%
+
+  div#menu
+    a
+      padding 10px 20px
+      display block
+      &:hover
+        background #222
+
+  a.download
+    display block
+    width 150px
+    padding 10px 20px
+    border 2px solid white
+    border-radius 4px
+    text-align center
+    margin 30px auto
+
+    &:hover
+      cursor pointer
+
+section#modal-download
+  display none
+  width 100%
+  height 100%
+  background rgba(#333, 0.7)
+  position fixed
+
+  div#window
+    background white
+    width: 35%
+    height auto
+    margin 10% auto
+    border-radius 5px 
+
+    @media screen and (max-width: 600px)
+      width 100%
+      height 100%
+      margin 0 auto
+      border-radius 0px 
+
+    a.close
+      float right
+      margin 25px 20px
+
+      &:hover
+        cursor pointer
+
+    h2.title 
+      font-weight normal
+      padding 20px
+      font-size 20px
+      border-bottom 1px solid #d9d9d9
+
+    div.os
+      padding 5px 10px 25px 10px
+      div
+        display block
+        text-align center
+
+      div.name
+        margin-top 10px
+
+        a
+          display inline-block
+          padding 10px
+          border 2px solid #d9d9d9
+          border-radius 4px
+          margin 2px 10px
+          min-width 130px
+          text-align left
+
+          &:hover
+            cursor pointer

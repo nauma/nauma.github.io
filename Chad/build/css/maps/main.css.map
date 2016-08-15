@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.styl"],"names":[],"mappings":"AAAA;EACE,SAAQ,EAAR;EACA,QAAO,EAAP;;AAEF;EACE,iBAAgB,KAAhB;EACA,OAAM,KAAN;;AAEF;EACE,aAAmB,oCAAnB","file":"main.css","sourceRoot":"/source/","sourcesContent":["*\r\n  padding 0\r\n  margin 0\r\n\r\na\r\n  text-decoration none\r\n  color black\r\n\r\nbody\r\n  font-family Verdana, Geneva, Tahoma, sans-serif"]}
