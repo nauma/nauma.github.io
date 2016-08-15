@@ -12,7 +12,6 @@ gulp.task('watch', function() {
       .pipe(sourcemaps.init())
       .pipe(stylus())
       .pipe(sourcemaps.write('./maps'))
-      .pipe(concat('main.css'))
       .pipe(gulp.dest('build/css'));
   });
 
