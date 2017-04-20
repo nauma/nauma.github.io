@@ -1,0 +1,960 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: myraid;
+  src: url(../fonts/myriad-set-pro_thin.ttf);
+}
+
+body {
+  font-family: myraid;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #333333;
+  font-weight: normal;
+}
+
+header {
+  background: #212121;
+  height: 51px;
+  width: 100%;
+  top: 0;
+  color: white;
+  position: fixed;
+}
+
+header > div#head > button#open-menu {
+  display: none;
+}
+
+header > div#head > button#close-menu {
+  display: none;
+}
+
+div#head {
+  max-width: 87%;
+  margin: 0 auto;
+}
+
+div#head > button#open-menu {
+  display: hide;
+}
+
+div#head > a#logo {
+  float: left;
+  position: absolute;
+  display: block;
+  width: 80px;
+  padding: 10px 15px;
+  height: 51px;
+  background: url('../images/logo.png') 5px 8px no-repeat;
+  background-size: 27px 32px;
+}
+
+div#head > div#contact {
+  float: right;
+  padding: 18px;
+}
+
+div#head > div#menu {
+  padding: 5px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+div#head > div#menu > div.list {
+  text-align: center;
+  padding: 13px;
+}
+
+div#head > div#menu > div.list > a {
+  margin-right: 15px;
+  font-size: 16px;
+  text-decoration: none !important;
+}
+
+div#block {
+  width: 100%;
+  min-height: 100px;
+}
+
+div#block > div.content {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#block.header {
+  background: #010101 url('../images/head-cover.jpg');
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+}
+
+.header .header_text {
+  top: 40%;
+  color: white;
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0;
+}
+
+.header .header_text h1 {
+  font-size: 44px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.header .header_text .gotext {
+  margin-bottom: 70px;
+}
+
+.header .header_text p {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 70px;
+}
+
+.header .goto {
+  left: 50%;
+  bottom: 0;
+  width: 100px;
+  height: 100px;
+  background: url('../images/button.png') no-repeat;
+  background-size: 100px 100px;
+  position: absolute;
+  border: none;
+  transform: translateX(-50%);
+  outline: none;
+}
+
+.button {
+  color: white;
+  background: #0CACE8;
+  border-radius: 4px;
+  padding: 12px 25px;
+  border: none;
+  font-size: 18px;
+  font-weight: normal;
+  outline: none;
+}
+
+.button2 {
+  background: #ffffff;
+  border-radius: 15px;
+  color: #8c8c8c;
+  font-size: 14px;
+  text-align: center;
+  border: 1px solid #8c8c8c;
+  padding: 5px 27px;
+  outline: none;
+}
+
+.button2:hover,
+.button2:active {
+  border: 1px solid #2898d2;
+  color: #2898d2;
+}
+#block > .content {
+  text-align: center;
+}
+
+div#block.catalog > div.content {
+  max-width: 1450px;
+}
+
+.catalog > .content > h1 {
+  margin-top: 80px;
+  font-size: 42px;
+}
+
+.catalog > .content > p {
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+
+.catalog > .content > .phone_list {
+
+}
+
+.catalog > .content > .phone_list > .phone {
+  min-width: 160px;
+  max-width: 230px;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.catalog > .content > .phone_list > .phone > .image {
+  margin: 0 auto 10px auto;
+  width: 120px;
+  height: 250px;
+  background-position: center;
+
+  background: url(../images/iphone/5s+se.png) no-repeat;
+  background-size: 120px 250px;
+}
+
+.catalog > .content > .phone_list > .phone > .name {
+  color: #8c8c8c;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.catalog > .content > .phone_list > .phone > .price {
+  color: #333333;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+
+#block.select > div.content {
+  max-width: 1150px;
+  margin: 50px auto;
+}
+
+#block.select > div.content > div.item,
+#block.select > div.content > div.buy_form {
+  display: inline-block;
+}
+
+#block.select > div.content > div.item {
+  max-width: 400px;
+  min-width: 160px;
+  height: 600px;
+  width: 100%;
+  float: left;
+  margin-right: 100px;
+}
+
+#block.select > div.content > div.item > .name {
+  font-size: 32px;
+}
+
+#block.select > div.content > div.item > div.image {
+  display: block;
+  max-width: 400px;
+  min-width: 160px;
+  max-height: 500px;
+  height: 100%;
+  background: url(../images/full/iphone_5s/black.jpg) no-repeat;
+  background-size: 300px 500px;
+  background-position: center;
+  margin: 50px auto;
+}
+
+#block.select > div.content > div.buy_form {
+  max-width: 650px;
+  min-width: 200px;
+  width: 100%;
+  text-align: left;
+  margin-top: 80px;
+  color: #333333;
+}
+
+#block.select > div.content > div.buy_form > div.block > div.select {
+  margin: 20px 0px 20px 0px;
+}
+
+#block.select > div.content > div.buy_form > div.block > div.select > div.butt {
+  max-width: 100px;
+  width: 100%;
+  border: 2px solid #C7C7C7;
+  border-radius: 4px;
+  text-align: center;
+  display: inline-block;
+  padding: 5px;
+  margin-right: 20px;
+  margin-bottom: 15px;
+}
+
+#block.select > div.content > div.buy_form > div.block > div.select > div.big_size {
+  max-width: 150px;
+}
+
+#block.select > div.content > div.buy_form > div.block > div.select > div.butt:hover,
+#block.select > div.content > div.buy_form > div.block > div.select > div.butt.active {
+  border: 2px solid #52A7F2;  
+}
+
+#block.select > div.content > div.buy_form > div.block > div.select > div.butt > .name {
+  max-width: 100px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#block.select > div.content > div.buy_form > div.block > div.select > div.butt > .color {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: white;
+  margin: 6px auto 10px auto;
+}
+
+#block.select > div.content > div.buy_form > div.block > div.select > div.butt > .text {
+  padding: 10px 5px;
+}
+
+#block.select > div.content > div.buy_form > div.block > div.select > div.butt > .black {
+  background: black;
+}
+
+#block.select > div.content > div.buy_form > div.block > div.select > div.butt > .silver {
+  background: silver;
+}
+
+#block.select > div.content > div.buy_form > div.block > div.select > div.butt > .pink {
+  background: pink;
+}
+
+#block.select > div.content > div.buy_form > div.block > div.select > div.butt > .gold {
+  background: gold;
+}
+
+#block.select > div.content > div.buy_form > div.block > div.select > div.butt > .grey {
+  background: grey;
+}
+
+#block.select > div.content > div.buy_form > div.block > div.select > div.butt > .red {
+  background: red;
+}
+
+#block.select > div.content > div.buy_form > div.block > div.price,
+#block.select > div.content > div.buy_form > div.block > div.buy {
+  display: inline-block;
+}
+
+#block.select > div.content > div.buy_form > div.block > div.price {
+  width: 55%;
+  font-size: 28px;
+}
+
+#block.vantage > div.content {
+  padding-top: 150px;
+  max-width: 700px;
+}
+
+#block.vantage > div.content > h2 {
+  margin-bottom: 150px;
+  font-size: 30px;
+}
+
+/*
+#block.vantage > div.left_image {
+  width: 450px;
+  height: 100%;
+  float: left;
+  left: 0;
+  position: absolute;
+  background: url(../images/iphone6_left.jpg) no-repeat;
+  background-position: center;
+  background-size: 430px 430px;
+}
+
+#block.vantage > div.right_image {
+  width: 450px;
+  height: 100%;
+  float: right;
+  right: 0;
+  position: absolute;
+  background: url(../images/iphone6s_right.jpg) no-repeat;
+  background-position: center;
+  background-size: 430px 430px;
+}*/
+
+#block.vantage > div.content > div.block {
+  max-width: 700px;
+  margin: 0 auto;
+
+}
+
+#block.vantage > div.content > div.block > div.line {
+  display: block;
+  width: 100%;
+  height: 300px;
+}
+
+#block.vantage > div.content > div.block > div.line > div.item {
+  display: inline-block;
+  width: 49%;
+  text-align: center;
+}
+
+#block.vantage > div.content > div.block > div.line > div.item > div.icon {
+  width: 120px;
+  height: 120px;
+  display: block;
+}
+
+#block.vantage > div.content > div.block > div.line > div.item > div.text {
+  padding: 0px 20px;
+  width: 200px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#block.vantage > div.content > div.block > div.line > div.item > div.map {
+  background: url(../images/map-black.png) no-repeat;
+  background-position: center;
+  background-size: 100px 100px;
+  margin: 0 auto;
+}
+
+#block.vantage > div.content > div.block > div.line > div.item > div.gear {
+  background: url(../images/gear-black.png) no-repeat;
+  background-position: center;
+  background-size: 100px 100px;
+  margin: 0 auto;
+}
+
+#block.vantage > div.content > div.block > div.line > div.item > div.users {
+  background: url(../images/users-black.png) no-repeat;
+  background-position: center;
+  background-size: 100px 100px;
+  margin: 0 auto;
+}
+
+#block.vantage > div.content > div.block > div.line > div.item > div.clock {
+  background: url(../images/clock-black.png) no-repeat;
+  background-position: center;
+  background-size: 100px 100px;
+  margin: 0 auto;
+}
+
+#block.benefit {
+  background: #F2F2F2;
+}
+
+#block.benefit > div.content {
+  padding-top: 100px;
+}
+
+#block.benefit > div.content > h2 {
+  font-size: 30px;
+  margin-bottom: 100px;
+}
+
+#block.benefit > div.content > div.block {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#block.benefit > div.content > div.block > div.big_line {
+  min-height: 220px;
+}
+
+#block.benefit > div.content > div.block > div.big_line:last-child {
+  margin-left: 12%;
+}
+
+
+#block.benefit > div.content > div.block > div.big_line > div.item {
+  float: left;
+  width: 230px;
+  text-align: center;
+}
+
+#block.benefit > div.content > div.block > div.big_line > div.item > div.icon {
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin: 10px auto;
+  background: #0CACE8;
+  border-radius: 50%;
+}
+
+#block.benefit > div.content > div.block > div.big_line > div.item > div.text {
+  padding: 0px 20px;
+  width: 200px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#block.benefit > div.content > div.block > div.big_line > div.item > div.smartphone {
+  background: #0CACE8 url(../images/smartphone.png) no-repeat;
+  background-position: center;
+  background-size: 55px 55px;
+}
+
+#block.benefit > div.content > div.block > div.big_line > div.item > div.file {
+  background: #0CACE8 url(../images/file.png) no-repeat;
+  background-position: center;
+  background-size: 40px 40px;
+}
+
+#block.benefit > div.content > div.block > div.big_line > div.item > div.gift {
+  background: #0CACE8 url(../images/gift.png) no-repeat;
+  background-position: center;
+  background-size: 40px 40px;
+}
+
+#block.benefit > div.content > div.block > div.big_line > div.item > div.geo {
+  background: #0CACE8 url(../images/geo.png) no-repeat;
+  background-position: center;
+  background-size: 40px 40px;
+}
+
+#block.benefit > div.content > div.block > div.big_line > div.item > div.gear {
+  background: #0CACE8 url(../images/gear_2.png) no-repeat;
+  background-position: center;
+  background-size: 40px 40px;
+}
+
+#block.benefit > div.content > div.block > div.big_line > div.item > div.notepad {
+  background: #0CACE8 url(../images/notepad.png) no-repeat;
+  background-position: center;
+  background-size: 40px 40px;
+}
+
+#block.benefit > div.content > div.block > div.big_line > div.item > div.percent {
+  background: #0CACE8 url(../images/percent.png) no-repeat;
+  background-position: center;
+  background-size: 40px 40px;
+}
+
+#block.guarantee {
+  height: 650px;
+  background: url(../images/guaranty-talon.jpg) no-repeat;
+  background-size: 800px 600px;
+  background-position: 110% 30px;
+  padding-bottom: 50px;
+}
+
+#block.guarantee > div.content {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  max-width: 1200px;
+  height: 100%;
+}
+
+#block.guarantee > div.content > div.left {
+  max-width: 650px;
+  width: 100%;
+  padding-top: 200px;
+  float: left;
+}
+
+#block.guarantee > div.content > div.left > h2 {
+  font-size: 44px;
+  margin-bottom: 30px;
+}
+
+#block.guarantee > div.content > div.left > h3 {
+  font-size: 24px;
+  margin: 5px 0px;
+  margin-bottom: 20px;
+}
+
+#block.guarantee > div.content > div.left > div.text {
+  font-size: 18px;
+}
+
+#block.delivery {
+  background: #F2F2F2;
+}
+
+#block.delivery > div.content {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#block.delivery > div.content > h2 {
+  font-size: 44px;
+  margin-bottom: 20px;
+}
+
+#block.delivery > div.content > h3 {
+  font-size: 24px;
+  margin: 5px 0px;
+  margin-bottom: 20px;
+}
+
+#block.delivery > div.content > div.block {
+  width: 750px;
+  margin: 0 auto;
+}
+
+#block.delivery > div.content > div.block > div.line {
+  display: block;
+  width: 100%;
+  min-height: 250px;
+}
+
+#block.delivery > div.content > div.block > div.line > div.item {
+  width: 49%;
+  float: left;
+}
+
+#block.delivery > div.content > div.block > div.line > div.item > div.icon {
+  width: 140px;
+  height: 140px;
+  display: block;
+  margin: 0 auto;
+}
+
+#block.delivery > div.content > div.block > div.line > div.item > div.text {
+  padding: 0px 20px;
+  width: 200px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#block.delivery > div.content > div.block > div.line > div.item > div.navigation {
+  background: url(../images/map-blue.png) no-repeat;
+  background-position: center;
+  background-size: 90px 90px;
+}
+
+#block.delivery > div.content > div.block > div.line > div.item > div.map {
+  background: url(../images/navigation-blue.png) no-repeat;
+  background-position: center;
+  background-size: 90px 90px;
+}
+
+#block.delivery > div.content > div.text {
+  width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+}
+
+#block.about {
+  background: url(../images/about.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  height: 400px;
+}
+
+#block.about > div.content > h2 {
+  color: #ffffff;
+  font-size: 28px;
+  margin-top: 50px;
+}
+
+#block.about > div.content > div.text {
+  display: block;
+  width: 700px;
+  margin: 25px auto;
+  font-size: 18px;
+}
+
+#block.reviews {
+  background: #f2f2f2;
+  height: 650px;
+}
+
+#block.reviews > div.content {
+  height: 100%;
+  max-width: 1300px;
+}
+
+#block.reviews > div.content > h2 {
+  color: #333333;
+  font-size: 28px;
+  margin: 50px 0px;
+}
+
+#block.reviews > div.content > div.left {
+  width: 110px;
+  height: 100%;
+  background: url(../images/left.png) no-repeat;
+  background-position: center 30%;
+  background-size: 80px 80px;
+  float: left;
+}
+
+#block.reviews > div.content > div.right {
+  width: 110px;
+  height: 100%;
+  background: url(../images/right.png) no-repeat;
+  background-position: center 30%;
+  background-size: 80px 80px;
+  float: right;
+}
+
+#block.reviews > div.content > div.reviews {
+  max-width: 1000px;
+  margin-left: 210px;
+  overflow: hidden;
+  height: 400px;
+  text-align: center;
+}
+
+#block.reviews > div.content > div.reviews > div.review {
+  float: left;
+  width: 260px;
+  background: white;
+  height: 100%;
+  margin-right: 40px;
+  padding: 40px 0;
+}
+
+#block.reviews > div.content > div.reviews > div.review > img,
+#block.reviews > div.content > div.reviews > div.review > h3,
+#block.reviews > div.content > div.reviews > div.review > div {
+  display: block;
+  margin: 10px auto;
+}
+
+#block.reviews > div.content > div.reviews > div.review > img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+#block.reviews > div.content > div.reviews > div.review > h3.name {
+  font-size: 20px;
+}
+
+#block.reviews > div.content > div.reviews > div.review > div.social {
+  margin-top: -10px;
+}
+
+#block.reviews > div.content > div.reviews > div.review > div.social > a.instagram {
+  background: url(../images/social/instagram.png) no-repeat;
+  background-size: 32px 32px;
+  background-position: center;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  font-size: 0;
+}
+
+#block.reviews > div.content > div.reviews > div.review > div.text {
+  padding: 5px 10px;
+}
+
+#block.buy > div.content {
+  max-width: 1000px
+}
+
+#block.buy > div.content > h2 {
+  font-size: #333;
+  margin-top: 50px;
+}
+
+#block.buy > div.content > div.description {
+  font-size: 16px;
+  color: #4C4C4C;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #E2E2E2;
+  margin-bottom: 70px;
+}
+
+#block.buy > div.content > div.form > div.block {
+  display: inline-block;
+  max-width: 450px;
+}
+
+#block.buy > div.content > div.form > div.block:first-child {
+  padding-right: 9%;
+}
+
+#block.buy > div.content > div.form > div.block > input,
+#block.buy > div.content > div.form > div.block > button {
+  display: block;
+  width: 400px;
+  padding: 10px 15px;
+  margin: 10px 0;
+}
+
+#block.buy > div.content > div.form > div.block > button {
+  width: 435px;
+  color: white;
+  background: #0CACE8;
+  border: none;
+  border-radius: 4px;
+}
+
+#block.buy > div.content > div.form > div.block > input {
+  border: 1px solid #464646;
+  border-radius: 4px;
+}
+
+#block.buy > div.content > div.form > div.block > div.item {
+  width: 450px;
+  display: block;
+  margin: 15px 0;
+  border-radius: 4px;
+  border: 1px solid #464646;
+}
+
+#block.buy > div.content > div.form > div.block > div.item > div.name,
+#block.buy > div.content > div.form > div.block > div.item > div.text {
+  display: inline-block;
+  text-align: center;
+  width: calc(49.5% - 29.5px);
+  padding: 10px 15px;
+}
+
+#block.buy > div.content > div.form > div.block > div.item > div.name {
+  background: #0CACE8;
+  color: white;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+#block.map {
+  background: #F2F2F2;
+}
+
+#block.map > div.content > h2 {
+  font-size: 28px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#block.map > div.content > div.text {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 80px;
+}
+
+
+footer {
+  background: #212121;
+  width: 100%;
+  height: 50px;
+  color: white;
+}
+
+footer > div.copy {
+  float: left;
+  padding: 15px 10px;
+}
+
+footer > div.author {
+  float: right;
+  padding: 15px 10px;
+}
+
+footer > div.phone {
+  text-align: center;
+  padding: 15px 10px;
+}
+
+@media only screen and (max-width: 1200px) {
+  header#open {
+    height: 100%;
+  }
+
+  header > div#head > button#open-menu {
+    display: block;
+    padding: 10px 15px;
+    width: 100px;
+    text-align: center;
+    margin: 5px auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    color: white;
+    background: none;
+    border: none;
+    font-size: 18px;
+    outline: none;
+  }
+
+  header#open > div#head > button#open-menu {
+    display: none;
+  }
+
+  header#open > div#head > button#close-menu {
+    display: block;
+    padding: 10px 15px;
+    width: 100px;
+    text-align: center;
+    margin: 5px auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    color: white;
+    background: none;
+    border: none;
+    font-size: 18px;
+    outline: none;
+  }
+
+  header > div#head > div#menu {
+    display: none;
+  }
+
+  header#open > div#head > div#menu {
+    display: block;
+    width: 300px;
+    text-align: center;
+    margin: 100px auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+
+  header#open > div#head > div#menu > div.list > a {
+    display: block;
+    margin: 15px 0;
+    font-size: 20px;
+  }
+
+  #block.select > div.content > div.item {
+    float: none;
+    margin-right: 0;
+  }
+
+  #block.select > div.content > div.buy_form > div.block {
+    margin: 80px 50px 0 50px;
+  }
+
+  #block.benefit > div.content > div.block > div.big_line > div.item {
+    float: none;
+    display: inline-block;
+    margin: 0 auto;
+  }
+
+  #block.benefit > div.content > div.block > div.big_line:last-child {
+    margin-left: 0;
+  }
+
+  #block.benefit > div.content > div.block {
+    padding-bottom: 50px;
+  }
+
+  #block.guarantee {
+    background: none;
+    background-size: 0 0;
+    background-position: 0 0;
+  }
+
+  #block.guarantee > div.content > div.left {
+    float: none;
+    margin: 0 auto;
+  }
+
+  #block.delivery > div.content > div.block > div.line {
+    padding-bottom: 50px;
+  }
+
+  #block.delivery > div.content > div.block > div.line > div.item {
+    float: none;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  #block.buy > div.content > div.form > div.block {
+    display: block;
+    margin: 0 auto;
+  }
+
+  #block.buy > div.content > div.form > div.block:first-child {
+    padding-right: 0;
+  }
+
+}

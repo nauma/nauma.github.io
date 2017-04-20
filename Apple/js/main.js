@@ -1,0 +1,2 @@
+document.getElementById('open-menu').onclick = function() {document.getElementsByTagName('header')[0].id = 'open';}
+document.getElementById('close-menu').onclick = function() {document.getElementsByTagName('header')[0].id = '';}
