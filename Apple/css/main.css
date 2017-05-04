@@ -10,6 +10,7 @@
 
 body {
   font-family: myraid;
+  min-width: 325px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -89,7 +90,9 @@ div#block > div.content {
 
 #block.header {
   background: #010101 url('../images/head-cover.jpg');
-  -webkit-background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
 }
@@ -195,8 +198,35 @@ div#block.catalog > div.content {
   width: 120px;
   height: 250px;
   background-position: center;
+}
 
+.catalog > .content > .phone_list > .phone > div.iphone5s {
   background: url(../images/iphone/5s+se.png) no-repeat;
+  background-size: 120px 250px;
+}
+
+.catalog > .content > .phone_list > .phone > div.iphone6 {
+  background: url(../images/iphone/6+6s.png) no-repeat;
+  background-size: 120px 250px;
+}
+
+.catalog > .content > .phone_list > .phone > div.iphone6s {
+  background: url(../images/iphone/6+6s.png) no-repeat;
+  background-size: 120px 250px;
+}
+
+.catalog > .content > .phone_list > .phone > div.iphoneSE {
+  background: url(../images/iphone/5s+se.png) no-repeat;
+  background-size: 120px 250px;
+}
+
+.catalog > .content > .phone_list > .phone > div.iphone7 {
+  background: url(../images/iphone/iphone7.png) no-repeat;
+  background-size: 120px 250px;
+}
+
+.catalog > .content > .phone_list > .phone > div.iphone7plus {
+  background: url(../images/iphone/iphone7Plus.png) no-repeat;
   background-size: 120px 250px;
 }
 
@@ -244,10 +274,152 @@ div#block.catalog > div.content {
   min-width: 160px;
   max-height: 500px;
   height: 100%;
-  background: url(../images/full/iphone_5s/black.jpg) no-repeat;
-  background-size: 300px 500px;
-  background-position: center;
   margin: 50px auto;
+}
+
+#block.select > div.content > div.item > div.iphone5s_black {
+  background: url(../images/full/iphone_5s/black.jpg) no-repeat;
+  background-size: 320px 500px;
+  background-position: center;
+}
+
+#block.select > div.content > div.item > div.iphone5s_silver {
+  background: url(../images/full/iphone_5s/silver.jpg) no-repeat;
+  background-size: 322px 500px;
+  background-position: center;
+}
+
+#block.select > div.content > div.item > div.iphone5s_gold {
+  background: url(../images/full/iphone_5s/gold.jpg) no-repeat;
+  background-size: 320px 500px;
+  background-position: center;
+}
+
+#block.select > div.content > div.item > div.iphone6_black {
+  background: url(../images/full/iphone_6/black.png) no-repeat;
+  background-size: 280px 500px;
+  background-position: center;
+}
+
+#block.select > div.content > div.item > div.iphone6_silver {
+  background: url(../images/full/iphone_6/silver.png) no-repeat;
+  background-size: 280px 500px;
+  background-position: center;
+}
+
+#block.select > div.content > div.item > div.iphone6_gold {
+  background: url(../images/full/iphone_6/gold.png) no-repeat;
+  background-size: 280px 500px;
+  background-position: center;
+}
+
+#block.select > div.content > div.item > div.iphone6s_black {
+  background: url(../images/full/iphone_6s/black.png) no-repeat;
+  background-size: 280px 500px;
+  background-position: center;
+}
+
+#block.select > div.content > div.item > div.iphone6s_silver {
+  background: url(../images/full/iphone_6s/silver.png) no-repeat;
+  background-size: 280px 500px;
+  background-position: center;
+}
+
+#block.select > div.content > div.item > div.iphone6s_gold {
+  background: url(../images/full/iphone_6s/gold.png) no-repeat;
+  background-size: 280px 500px;
+  background-position: center;
+}
+
+#block.select > div.content > div.item > div.iphone6s_pink{
+  background: url(../images/full/iphone_6s/pink.png) no-repeat;
+  background-size: 280px 500px;
+  background-position: center;
+}
+
+
+#block.select > div.content > div.item > div.iphoneSE_black {
+  background: url(../images/full/iphone_se/black.jpg) no-repeat;
+  background-size: 320px 500px;
+  background-position: center;
+}
+
+#block.select > div.content > div.item > div.iphoneSE_silver {
+  background: url(../images/full/iphone_se/silver.jpg) no-repeat;
+  background-size: 320px 500px;
+  background-position: center;
+}
+
+#block.select > div.content > div.item > div.iphoneSE_gold {
+  background: url(../images/full/iphone_se/gold.jpg) no-repeat;
+  background-size: 320px 500px;
+  background-position: center;
+}
+
+#block.select > div.content > div.item > div.iphoneSE_pink {
+  background: url(../images/full/iphone_se/pink.jpg) no-repeat;
+  background-size: 320px 500px;
+  background-position: center;
+}
+
+#block.select > div.content > div.item > div.iphone7_black {
+  background: url(../images/full/iphone_7/black.png) no-repeat;
+  background-size: 280px 500px;
+  background-position: center;
+}
+
+#block.select > div.content > div.item > div.iphone7_silver {
+  background: url(../images/full/iphone_7/silver.png) no-repeat;
+  background-size: 280px 500px;
+  background-position: center;
+}
+
+#block.select > div.content > div.item > div.iphone7_gold {
+  background: url(../images/full/iphone_7/gold.png) no-repeat;
+  background-size: 280px 500px;
+  background-position: center;
+}
+
+#block.select > div.content > div.item > div.iphone7_pink {
+  background: url(../images/full/iphone_7/pink.png) no-repeat;
+  background-size: 280px 500px;
+  background-position: center;
+}
+
+#block.select > div.content > div.item > div.iphone7_grey {
+  background: url(../images/full/iphone_7/grey.jpg) no-repeat;
+  background-size: 280px 500px;
+  background-position: center;
+}
+
+#block.select > div.content > div.item > div.iphone7plus_black {
+  background: url(../images/full/iphone_7plus/black.png) no-repeat;
+  background-size: 280px 500px;
+  background-position: center;
+}
+
+#block.select > div.content > div.item > div.iphone7plus_silver {
+  background: url(../images/full/iphone_7plus/silver.jpg) no-repeat;
+  background-size: 280px 500px;
+  background-position: center;
+}
+
+#block.select > div.content > div.item > div.iphone7plus_gold {
+  background: url(../images/full/iphone_7plus/gold.jpg) no-repeat;
+  background-size: 280px 500px;
+  background-position: center;
+}
+
+#block.select > div.content > div.item > div.iphone7plus_pink {
+  background: url(../images/full/iphone_7plus/pink.jpg) no-repeat;
+  background-size: 280px 500px;
+  background-position: center;
+}
+
+#block.select > div.content > div.item > div.iphone7plus_grey {
+  background: url(../images/full/iphone_7plus/grey.png) no-repeat;
+  background-size: 280px 500px;
+  background-position: center;
 }
 
 #block.select > div.content > div.buy_form {
@@ -275,6 +447,24 @@ div#block.catalog > div.content {
   margin-bottom: 15px;
 }
 
+#block.select > div.content > div.buy_form > div.block > div.select > div.item {
+  max-width: 100px;
+  max-height: 130px;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #C7C7C7;
+  border-radius: 4px;
+  text-align: center;
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 15px;
+}
+
+#block.select > div.content > div.buy_form > div.block > div.select > div.item:hover,
+#block.select > div.content > div.buy_form > div.block > div.select > div.item.active {
+  border: 2px solid #52A7F2;  
+}
+
 #block.select > div.content > div.buy_form > div.block > div.select > div.big_size {
   max-width: 150px;
 }
@@ -300,6 +490,14 @@ div#block.catalog > div.content {
 
 #block.select > div.content > div.buy_form > div.block > div.select > div.butt > .text {
   padding: 10px 5px;
+}
+
+#block.select > div.content > div.buy_form > div.block > div.select > div.item > .text {
+  padding: 3px;
+  background: #9C9C9C;
+  color: #ffffff;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
 }
 
 #block.select > div.content > div.buy_form > div.block > div.select > div.butt > .black {
@@ -522,8 +720,8 @@ div#block.catalog > div.content {
 #block.guarantee {
   height: 650px;
   background: url(../images/guaranty-talon.jpg) no-repeat;
-  background-size: 800px 600px;
-  background-position: 110% 30px;
+  background-size: 700px 550px;
+  background-position: 115% 110px;
   padding-bottom: 50px;
 }
 
@@ -577,7 +775,7 @@ div#block.catalog > div.content {
 }
 
 #block.delivery > div.content > div.block {
-  width: 750px;
+  max-width: 750px;
   margin: 0 auto;
 }
 
@@ -601,7 +799,7 @@ div#block.catalog > div.content {
 
 #block.delivery > div.content > div.block > div.line > div.item > div.text {
   padding: 0px 20px;
-  width: 200px;
+  max-width: 200px;
   text-align: center;
   margin: 0 auto;
 }
@@ -619,7 +817,7 @@ div#block.catalog > div.content {
 }
 
 #block.delivery > div.content > div.text {
-  width: 700px;
+  max-width: 700px;
   margin: 0 auto;
   text-align: center;
   font-size: 18px;
@@ -627,8 +825,10 @@ div#block.catalog > div.content {
 
 #block.about {
   background: url(../images/about.jpg) no-repeat;
-  background-size: cover;
+  background-attachment: fixed;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #ffffff;
   height: 400px;
 }
@@ -641,7 +841,7 @@ div#block.catalog > div.content {
 
 #block.about > div.content > div.text {
   display: block;
-  width: 700px;
+  max-width: 700px;
   margin: 25px auto;
   font-size: 18px;
 }
@@ -690,7 +890,8 @@ div#block.catalog > div.content {
 
 #block.reviews > div.content > div.reviews > div.review {
   float: left;
-  width: 260px;
+  max-width: 260px;
+  min-width: 150px;
   background: white;
   height: 100%;
   margin-right: 40px;
@@ -733,7 +934,7 @@ div#block.catalog > div.content {
 }
 
 #block.buy > div.content {
-  max-width: 1000px
+  max-width: 1100px
 }
 
 #block.buy > div.content > h2 {
@@ -756,7 +957,7 @@ div#block.catalog > div.content {
 }
 
 #block.buy > div.content > div.form > div.block:first-child {
-  padding-right: 9%;
+  padding-right: 200px;
 }
 
 #block.buy > div.content > div.form > div.block > input,
@@ -957,4 +1158,20 @@ footer > div.phone {
     padding-right: 0;
   }
 
+}
+
+@media only screen and (max-width: 650px) {
+  #block.reviews > div.content > div.left {
+    width: 60px;
+    background-size: 40px 40px;
+  }
+
+  #block.reviews > div.content > div.right {
+    width: 60px;
+    background-size: 40px 40px;
+  }
+
+  #block.reviews > div.content > div.reviews {
+    margin-left: 80px;
+  }
 }

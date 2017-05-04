@@ -25,43 +25,43 @@
 
         <div class="phone_list">
           <div class="phone">
-            <div class="image iphone4">&nbsp;</div>
-            <div class="name">iPhone 4</div>
-            <div class="price">от 1500 руб.</div>
-            <button class="button2">Выбрать</button>
+            <div class="image iphone5s">&nbsp;</div>
+            <div class="name">iPhone 5s</div>
+            <div class="price">от 15 590 руб.</div>
+            <button class="button2 selectPhone iphone5s">Выбрать</button>
           </div>
 
           <div class="phone">
-            <div class="image iphone4">&nbsp;</div>
-            <div class="name">iPhone 4</div>
-            <div class="price">от 1500 руб.</div>
-            <button class="button2">Выбрать</button>
+            <div class="image iphone6">&nbsp;</div>
+            <div class="name">iPhone 6</div>
+            <div class="price">от 22 590 руб.</div>
+            <button class="button2 selectPhone iphone6">Выбрать</button>
           </div>
 
           <div class="phone">
-            <div class="image iphone4">&nbsp;</div>
-            <div class="name">iPhone 4</div>
-            <div class="price">от 1500 руб.</div>
-            <button class="button2">Выбрать</button>
+            <div class="image iphone6s">&nbsp;</div>
+            <div class="name">iPhone 6s</div>
+            <div class="price">от 28 590 руб.</div>
+            <button class="button2 selectPhone iphone6s">Выбрать</button>
           </div>
 
           <div class="phone">
-            <div class="image iphone4">&nbsp;</div>
-            <div class="name">iPhone 4</div>
-            <div class="price">от 1500 руб.</div>
-            <button class="button2">Выбрать</button>
+            <div class="image iphoneSE">&nbsp;</div>
+            <div class="name">iPhone SE</div>
+            <div class="price">от 27 590 руб.</div>
+            <button class="button2 selectPhone iphoneSE">Выбрать</button>
           </div>
           <div class="phone">
-            <div class="image iphone4">&nbsp;</div>
-            <div class="name">iPhone 4</div>
-            <div class="price">от 1500 руб.</div>
-            <button class="button2">Выбрать</button>
+            <div class="image iphone7">&nbsp;</div>
+            <div class="name">iPhone 7</div>
+            <div class="price">от 46 590 руб.</div>
+            <button class="button2 selectPhone iphone7">Выбрать</button>
           </div>
           <div class="phone">
-            <div class="image iphone4">&nbsp;</div>
-            <div class="name">iPhone 4</div>
-            <div class="price">от 1500 руб.</div>
-            <button class="button2">Выбрать</button>
+            <div class="image iphone7plus">&nbsp;</div>
+            <div class="name">iPhone 7+</div>
+            <div class="price">от 50 590 руб.</div>
+            <button class="button2 selectPhone iphone7plus">Выбрать</button>
           </div>
         </div>
       </div>
@@ -69,80 +69,521 @@
     </div>
 
     <div id="block" class="select">
-      <div class="content">
-        <div class="item">
-          <h2 class="name">iPhone 4</h2>
-          <div class="image">&nbsp;</div>
+      <div class="content iphone5s">
+        <div class="item phone_color_photos">
+          <h2 class="name">iPhone 5s</h2>
+          <div class="image iphone5s_black">&nbsp;</div>
+          <div class="image iphone5s_silver" style="display: none;">&nbsp;</div>
+          <div class="image iphone5s_gold" style="display: none;">&nbsp;</div>
         </div>
 
         <div class="buy_form">
           <div class="block">
-            <h3>Выбирите цвет:</h3>
-            <div class="select">
-              <div class="butt big_size active">
+            <h3>Выберите цвет:</h3>
+            <div class="select select_color">
+              <div class="butt big_size select_color active" data-color="black">
                 <div class="color black">&nbsp;</div>
                 <div class="name">Black</div>
               </div>
 
-              <div class="butt big_size">
+              <div class="butt big_size select_color" data-color="gold">
                 <div class="color gold">&nbsp;</div>
                 <div class="name">Gold</div>
               </div>
 
-              <div class="butt big_size">
+              <div class="butt big_size select_color" data-color="silver">
                 <div class="color silver">&nbsp;</div>
                 <div class="name">Silver</div>
-              </div>
-
-              <div class="butt big_size">
-                <div class="color grey">&nbsp;</div>
-                <div class="name">Grey</div>
-              </div>
-
-              <div class="butt big_size">
-                <div class="color pink">&nbsp;</div>
-                <div class="name">Pink</div>
-              </div>
-
-              <div class="butt big_size">
-                <div class="color red">&nbsp;</div>
-                <div class="name">Red</div>
               </div>
             </div>
           </div>
 
           <div class="block">
-            <h3>Выбирите объем памяти:</h3>
-            <div class="select">
-              <div class="butt active">
+            <h3>Выберите объем памяти:</h3>
+            <div class="select select_rom">
+              <div class="butt select_rom" data-price="15590">
+                <div class="text">16 ГБ</div>
+              </div>
+
+              <div class="butt select_rom" data-price="16590">
                 <div class="text">32 ГБ</div>
               </div>
 
-              <div class="butt">
+              <div class="butt select_rom" data-price="18590">
+                <div class="text">64 ГБ</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="block">
+            <h3>Выберите подарок:</h3>
+            <div class="select select_gift">
+              <div class="item select_gift">
+                <img src="images/selfie.jpg" width="100" height="100">
+                <div class="text">Селфи палка</div>
+              </div>
+
+              <div class="item select_gift">
+                <img src="images/selfie.jpg" width="100" height="100">
+                <div class="text">Селфи палка 2</div>
+              </div>
+
+              <div class="item select_gift">
+                <img src="images/selfie.jpg" width="100" height="100">
+                <div class="text">Селфи палка 3</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="block price_block" style="display: none">
+            <h2>Стоимость со скидкой:</h2>
+            <h4><s class="phone_face_price"></s></h4>
+            <div class="price">
+              <h2 class="phone_real_price"></h2>
+            </div>
+            <div class="buy">
+              <button class="button" type="submit">Заказать сейчас</button>
+            </div>
+          </div>
+           
+        </div>
+      </div>
+
+      <div class="content iphone6" style="display: none;">
+        <div class="item phone_color_photos">
+          <h2 class="name">iPhone 6</h2>
+          <div class="image iphone6_black">&nbsp;</div>
+          <div class="image iphone6_silver" style="display: none;">&nbsp;</div>
+          <div class="image iphone6_gold" style="display: none;">&nbsp;</div>
+        </div>
+
+        <div class="buy_form">
+          <div class="block">
+            <h3>Выберите цвет:</h3>
+            <div class="select select_color">
+              <div class="butt big_size select_color active" data-color="black">
+                <div class="color black">&nbsp;</div>
+                <div class="name">Black</div>
+              </div>
+
+              <div class="butt big_size select_color" data-color="gold">
+                <div class="color gold">&nbsp;</div>
+                <div class="name">Gold</div>
+              </div>
+
+              <div class="butt big_size select_color" data-color="silver">
+                <div class="color silver">&nbsp;</div>
+                <div class="name">Silver</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="block">
+            <h3>Выберите объем памяти:</h3>
+            <div class="select select_rom">
+              <div class="butt select_rom" data-price="22590">
+                <div class="text">16 ГБ</div>
+              </div>
+
+              <div class="butt select_rom" data-price="24590">
+                <div class="text">64 ГБ</div>
+              </div>
+
+              <div class="butt select_rom" data-price="26590">
+                <div class="text">128 ГБ</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="block">
+            <h3>Выберите подарок:</h3>
+            <div class="select select_gift">
+              <div class="item select_gift">
+                <img src="images/selfie.jpg" width="100" height="100">
+                <div class="text">Селфи палка</div>
+              </div>
+
+              <div class="item select_gift">
+                <img src="images/selfie.jpg" width="100" height="100">
+                <div class="text">Селфи палка 2</div>
+              </div>
+
+              <div class="item select_gift">
+                <img src="images/selfie.jpg" width="100" height="100">
+                <div class="text">Селфи палка 3</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="block price_block" style="display: none">
+            <h2>Стоимость со скидкой:</h2>
+            <h4><s class="phone_face_price"></s></h4>
+            <div class="price">
+              <h2 class="phone_real_price"></h2>
+            </div>
+            <div class="buy">
+              <button class="button" type="submit">Заказать сейчас</button>
+            </div>
+          </div>
+           
+        </div>
+      </div>
+
+      <div class="content iphone6s" style="display: none;">
+        <div class="item phone_color_photos">
+          <h2 class="name">iPhone 6s</h2>
+          <div class="image iphone6s_black">&nbsp;</div>
+          <div class="image iphone6s_silver" style="display: none;">&nbsp;</div>
+          <div class="image iphone6s_gold" style="display: none;">&nbsp;</div>
+          <div class="image iphone6s_pink" style="display: none;">&nbsp;</div>
+        </div>
+
+        <div class="buy_form">
+          <div class="block">
+            <h3>Выберите цвет:</h3>
+            <div class="select select_color">
+              <div class="butt big_size select_color active" data-color="black">
+                <div class="color black">&nbsp;</div>
+                <div class="name">Black</div>
+              </div>
+
+              <div class="butt big_size select_color" data-color="gold">
+                <div class="color gold">&nbsp;</div>
+                <div class="name">Gold</div>
+              </div>
+
+              <div class="butt big_size select_color" data-color="silver">
+                <div class="color silver">&nbsp;</div>
+                <div class="name">Silver</div>
+              </div>
+
+              <div class="butt big_size select_color" data-color="pink">
+                <div class="color pink">&nbsp;</div>
+                <div class="name">Pink</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="block">
+            <h3>Выберите объем памяти:</h3>
+            <div class="select select_rom">
+              <div class="butt select_rom" data-price="28590">
+                <div class="text">16 ГБ</div>
+              </div>
+
+              <div class="butt select_rom" data-price="32590">
+                <div class="text">32 ГБ</div>
+              </div>
+
+              <div class="butt select_rom" data-price="35590">
+                <div class="text">64 ГБ</div>
+              </div>
+
+              <div class="butt select_rom" data-price="39590">
+                <div class="text">128 ГБ</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="block">
+            <h3>Выберите подарок:</h3>
+            <div class="select select_gift">
+              <div class="item select_gift">
+                <img src="images/selfie.jpg" width="100" height="100">
+                <div class="text">Селфи палка</div>
+              </div>
+
+              <div class="item select_gift">
+                <img src="images/selfie.jpg" width="100" height="100">
+                <div class="text">Селфи палка 2</div>
+              </div>
+
+              <div class="item select_gift">
+                <img src="images/selfie.jpg" width="100" height="100">
+                <div class="text">Селфи палка 3</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="block price_block" style="display: none">
+            <h2>Стоимость со скидкой:</h2>
+            <h4><s class="phone_face_price"></s></h4>
+            <div class="price">
+              <h2 class="phone_real_price"></h2>
+            </div>
+            <div class="buy">
+              <button class="button" type="submit">Заказать сейчас</button>
+            </div>
+          </div>
+           
+        </div>
+      </div>
+
+      <div class="content iphoneSE" style="display: none;">
+        <div class="item phone_color_photos">
+          <h2 class="name">iPhone SE</h2>
+          <div class="image iphoneSE_black">&nbsp;</div>
+          <div class="image iphoneSE_silver" style="display: none;">&nbsp;</div>
+          <div class="image iphoneSE_gold" style="display: none;">&nbsp;</div>
+          <div class="image iphoneSE_pink" style="display: none;">&nbsp;</div>
+        </div>
+
+        <div class="buy_form">
+          <div class="block">
+            <h3>Выберите цвет:</h3>
+            <div class="select select_color">
+              <div class="butt big_size select_color active" data-color="black">
+                <div class="color black">&nbsp;</div>
+                <div class="name">Black</div>
+              </div>
+
+              <div class="butt big_size select_color" data-color="gold">
+                <div class="color gold">&nbsp;</div>
+                <div class="name">Gold</div>
+              </div>
+
+              <div class="butt big_size select_color" data-color="silver">
+                <div class="color silver">&nbsp;</div>
+                <div class="name">Silver</div>
+              </div>
+
+              <div class="butt big_size select_color" data-color="pink">
+                <div class="color pink">&nbsp;</div>
+                <div class="name">Pink</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="block">
+            <h3>Выберите объем памяти:</h3>
+            <div class="select select_rom">
+              <div class="butt select_rom" data-price="27590">
+                <div class="text">16 ГБ</div>
+              </div>
+
+              <div class="butt select_rom" data-price="30590">
+                <div class="text">64 ГБ</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="block">
+            <h3>Выберите подарок:</h3>
+            <div class="select select_gift">
+              <div class="item select_gift">
+                <img src="images/selfie.jpg" width="100" height="100">
+                <div class="text">Селфи палка</div>
+              </div>
+
+              <div class="item select_gift">
+                <img src="images/selfie.jpg" width="100" height="100">
+                <div class="text">Селфи палка 2</div>
+              </div>
+
+              <div class="item select_gift">
+                <img src="images/selfie.jpg" width="100" height="100">
+                <div class="text">Селфи палка 3</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="block price_block" style="display: none">
+            <h2>Стоимость со скидкой:</h2>
+            <h4><s class="phone_face_price"></s></h4>
+            <div class="price">
+              <h2 class="phone_real_price"></h2>
+            </div>
+            <div class="buy">
+              <button class="button" type="submit">Заказать сейчас</button>
+            </div>
+          </div>
+           
+        </div>
+      </div>
+
+      <div class="content iphone7" style="display: none;">
+        <div class="item phone_color_photos">
+          <h2 class="name">iPhone 7</h2>
+          <div class="image iphone7_black">&nbsp;</div>
+          <div class="image iphone7_silver" style="display: none;">&nbsp;</div>
+          <div class="image iphone7_gold" style="display: none;">&nbsp;</div>
+          <div class="image iphone7_grey" style="display: none;">&nbsp;</div>
+          <div class="image iphone7_pink" style="display: none;">&nbsp;</div>
+        </div>
+
+        <div class="buy_form">
+          <div class="block">
+            <h3>Выберите цвет:</h3>
+            <div class="select select_color">
+              <div class="butt big_size select_color active" data-color="black">
+                <div class="color black">&nbsp;</div>
+                <div class="name">Black</div>
+              </div>
+
+              <div class="butt big_size select_color" data-color="gold">
+                <div class="color gold">&nbsp;</div>
+                <div class="name">Gold</div>
+              </div>
+
+              <div class="butt big_size select_color" data-color="silver">
+                <div class="color silver">&nbsp;</div>
+                <div class="name">Silver</div>
+              </div>
+
+              <div class="butt big_size select_color" data-color="grey">
+                <div class="color grey">&nbsp;</div>
+                <div class="name">Grey</div>
+              </div>
+
+              <div class="butt big_size select_color" data-color="pink">
+                <div class="color pink">&nbsp;</div>
+                <div class="name">Pink</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="block">
+            <h3>Выберите объем памяти:</h3>
+            <div class="select select_rom">
+              <div class="butt select_rom" data-price="46590">
+                <div class="text">32 ГБ</div>
+              </div>
+
+              <div class="butt select_rom" data-price="50590">
                 <div class="text">128 ГБ</div>
               </div>
 
-              <div class="butt">
+              <div class="butt select_rom" data-price="55590">
                 <div class="text">256 ГБ</div>
               </div>
             </div>
           </div>
 
           <div class="block">
+            <h3>Выберите подарок:</h3>
+            <div class="select select_gift">
+              <div class="item select_gift">
+                <img src="images/selfie.jpg" width="100" height="100">
+                <div class="text">Селфи палка</div>
+              </div>
+
+              <div class="item select_gift">
+                <img src="images/selfie.jpg" width="100" height="100">
+                <div class="text">Селфи палка 2</div>
+              </div>
+
+              <div class="item select_gift">
+                <img src="images/selfie.jpg" width="100" height="100">
+                <div class="text">Селфи палка 3</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="block price_block" style="display: none">
             <h2>Стоимость со скидкой:</h2>
-            <h4><s>1488 руб.</s></h4>
+            <h4><s class="phone_face_price"></s></h4>
             <div class="price">
-              <h2>1337 руб.</h2>
+              <h2 class="phone_real_price"></h2>
             </div>
             <div class="buy">
-              <button class="button">Заказать сейчас</button>
+              <button class="button" type="submit">Заказать сейчас</button>
             </div>
           </div>
            
         </div>
-
       </div>
 
+      <div class="content iphone7plus" style="display: none;">
+        <div class="item phone_color_photos">
+          <h2 class="name">iPhone 7+</h2>
+          <div class="image iphone7plus_black">&nbsp;</div>
+          <div class="image iphone7plus_silver" style="display: none;">&nbsp;</div>
+          <div class="image iphone7plus_gold" style="display: none;">&nbsp;</div>
+          <div class="image iphone7plus_grey" style="display: none;">&nbsp;</div>
+          <div class="image iphone7plus_pink" style="display: none;">&nbsp;</div>
+        </div>
+
+        <div class="buy_form">
+          <div class="block">
+            <h3>Выберите цвет:</h3>
+            <div class="select select_color">
+              <div class="butt big_size select_color active" data-color="black">
+                <div class="color black">&nbsp;</div>
+                <div class="name">Black</div>
+              </div>
+
+              <div class="butt big_size select_color" data-color="gold">
+                <div class="color gold">&nbsp;</div>
+                <div class="name">Gold</div>
+              </div>
+
+              <div class="butt big_size select_color" data-color="silver">
+                <div class="color silver">&nbsp;</div>
+                <div class="name">Silver</div>
+              </div>
+
+              <div class="butt big_size select_color" data-color="grey">
+                <div class="color grey">&nbsp;</div>
+                <div class="name">Grey</div>
+              </div>
+
+              <div class="butt big_size select_color" data-color="pink">
+                <div class="color pink">&nbsp;</div>
+                <div class="name">Pink</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="block">
+            <h3>Выберите объем памяти:</h3>
+            <div class="select select_rom">
+              <div class="butt select_rom" data-price="50590">
+                <div class="text">32 ГБ</div>
+              </div>
+
+              <div class="butt select_rom" data-price="59590">
+                <div class="text">128 ГБ</div>
+              </div>
+
+              <div class="butt select_rom" data-price="65590">
+                <div class="text">256 ГБ</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="block">
+            <h3>Выберите подарок:</h3>
+            <div class="select select_gift">
+              <div class="item select_gift">
+                <img src="images/selfie.jpg" width="100" height="100">
+                <div class="text">Селфи палка</div>
+              </div>
+
+              <div class="item select_gift">
+                <img src="images/selfie.jpg" width="100" height="100">
+                <div class="text">Селфи палка 2</div>
+              </div>
+
+              <div class="item select_gift">
+                <img src="images/selfie.jpg" width="100" height="100">
+                <div class="text">Селфи палка 3</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="block price_block" style="display: none">
+            <h2>Стоимость со скидкой:</h2>
+            <h4><s class="phone_face_price"></s></h4>
+            <div class="price">
+              <h2 class="phone_real_price"></h2>
+            </div>
+            <div class="buy">
+              <button class="button" type="submit">Заказать сейчас</button>
+            </div>
+          </div>
+           
+        </div>
+      </div>
     </div>
 
     <div id="block" class="vantage">
@@ -343,13 +784,13 @@
           +7(910)-002-25-05
         </div>
       </div>
-      <iframe
+      <!--<iframe
         width="100%"
         height="500px"
         frameborder="0" style="border:0"
         src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDEKBGXvKLDaAZ7tAnfIlqyThVuqBXIEMU
           &q=Ukraine+Kiev+Майдан" allowfullscreen>
-      </iframe>
+      </iframe>-->
     </div>
   </content>
 
@@ -383,6 +824,7 @@
       <button id="close-menu">Закрыть</button>
     </div>
   </header>
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
