@@ -11,7 +11,7 @@ window.global.activePhone = {
 $('.button2.selectPhone').click(function(event){
   window.global.activePhone.code = $(this).attr('class').split(' ')[2];
 
-  var list = $('#block.select').children();
+  var list = $('.block#select').children();
 
   for (var i = 0; i < list.length; i++) {
     var name = $(list[i]).attr('class').split(' ')[1];
@@ -121,6 +121,7 @@ $(document).on('click', 'a[href^="#"]', function(e) {
   if ($id.length === 0) {
       return;
   }
+  document.getElementsByTagName('header')[0].id = '';
 
   // prevent standard hash navigation (avoid blinking in IE)
   e.preventDefault();

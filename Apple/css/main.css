@@ -75,24 +75,25 @@ div#head > div#menu > div.list > a.item {
   margin-right: 15px;
   font-size: 16px;
   text-decoration: none !important;
+  color: white;
 }
 
 div#head > div#menu > div.list > a.hide {
   display: none;
 }
 
-div#block {
+div.block {
   width: 100%;
   min-height: 100px;
 }
 
-div#block > div.content {
+div.block > div.content {
   max-width: 1100px;
   margin: 0 auto;
   overflow: hidden;
 }
 
-#block.header {
+.block#header {
   background: #010101 url('../images/head-cover.jpg');
   background-attachment: fixed;
   background-position: center;
@@ -101,7 +102,7 @@ div#block > div.content {
   height: 100vh;
 }
 
-.header .header_text {
+#header .header_text {
   top: 40%;
   color: white;
   position: absolute;
@@ -110,23 +111,23 @@ div#block > div.content {
   right: 0;
 }
 
-.header .header_text h1 {
+#header .header_text h1 {
   font-size: 44px;
   color: #fff;
   margin-bottom: 10px;
 }
 
-.header .header_text .gotext {
+#header .header_text .gotext {
   margin-bottom: 70px;
 }
 
-.header .header_text p {
+#header .header_text p {
   font-size: 24px;
   color: #fff;
   margin-bottom: 70px;
 }
 
-.header .goto {
+#header .goto {
   left: 50%;
   bottom: 0;
   width: 100px;
@@ -148,6 +149,7 @@ div#block > div.content {
   font-size: 18px;
   font-weight: normal;
   outline: none;
+  text-decoration: none;
 }
 
 .button2 {
@@ -166,29 +168,29 @@ div#block > div.content {
   border: 1px solid #2898d2;
   color: #2898d2;
 }
-#block > .content {
+.block > .content {
   text-align: center;
 }
 
-div#block.catalog > div.content {
+div.block#catalog > div.content {
   max-width: 1450px;
 }
 
-.catalog > .content > h1 {
+#catalog > .content > h1 {
   margin-top: 80px;
   font-size: 42px;
 }
 
-.catalog > .content > p {
+#catalog > .content > p {
   font-size: 24px;
   margin-bottom: 50px;
 }
 
-.catalog > .content > .phone_list {
+#catalog > .content > .phone_list {
 
 }
 
-.catalog > .content > .phone_list > .phone {
+#catalog > .content > .phone_list > .phone {
   min-width: 160px;
   max-width: 230px;
   width: 100%;
@@ -197,51 +199,51 @@ div#block.catalog > div.content {
   margin-bottom: 50px;
 }
 
-.catalog > .content > .phone_list > .phone > .image {
+#catalog > .content > .phone_list > .phone > .image {
   margin: 0 auto 10px auto;
   width: 120px;
   height: 250px;
   background-position: center;
 }
 
-.catalog > .content > .phone_list > .phone > div.iphone5s {
+#catalog > .content > .phone_list > .phone > div.iphone5s {
   background: url(../images/iphone/5s+se.png) no-repeat;
   background-size: 120px 250px;
 }
 
-.catalog > .content > .phone_list > .phone > div.iphone6 {
+#catalog > .content > .phone_list > .phone > div.iphone6 {
   background: url(../images/iphone/6+6s.png) no-repeat;
   background-size: 120px 250px;
 }
 
-.catalog > .content > .phone_list > .phone > div.iphone6s {
+#catalog > .content > .phone_list > .phone > div.iphone6s {
   background: url(../images/iphone/6+6s.png) no-repeat;
   background-size: 120px 250px;
 }
 
-.catalog > .content > .phone_list > .phone > div.iphoneSE {
+#catalog > .content > .phone_list > .phone > div.iphoneSE {
   background: url(../images/iphone/5s+se.png) no-repeat;
   background-size: 120px 250px;
 }
 
-.catalog > .content > .phone_list > .phone > div.iphone7 {
+#catalog > .content > .phone_list > .phone > div.iphone7 {
   background: url(../images/iphone/iphone7.png) no-repeat;
   background-size: 120px 250px;
 }
 
-.catalog > .content > .phone_list > .phone > div.iphone7plus {
+#catalog > .content > .phone_list > .phone > div.iphone7plus {
   background: url(../images/iphone/iphone7Plus.png) no-repeat;
   background-size: 120px 250px;
 }
 
-.catalog > .content > .phone_list > .phone > .name {
+#catalog > .content > .phone_list > .phone > .name {
   color: #8c8c8c;
   font-size: 24px;
   text-align: center;
   margin-bottom: 20px;
 }
 
-.catalog > .content > .phone_list > .phone > .price {
+#catalog > .content > .phone_list > .phone > .price {
   color: #333333;
   font-size: 18px;
   text-align: center;
@@ -249,17 +251,17 @@ div#block.catalog > div.content {
 }
 
 
-#block.select > div.content {
+.block#select > div.content {
   max-width: 1150px;
   margin: 50px auto;
 }
 
-#block.select > div.content > div.item,
-#block.select > div.content > div.buy_form {
+.block#select > div.content > div.item,
+.block#select > div.content > div.buy_form {
   display: inline-block;
 }
 
-#block.select > div.content > div.item {
+.block#select > div.content > div.item {
   max-width: 400px;
   min-width: 160px;
   height: 600px;
@@ -268,11 +270,11 @@ div#block.catalog > div.content {
   margin-right: 100px;
 }
 
-#block.select > div.content > div.item > .name {
+.block#select > div.content > div.item > .name {
   font-size: 32px;
 }
 
-#block.select > div.content > div.item > div.image {
+.block#select > div.content > div.item > div.image {
   display: block;
   max-width: 400px;
   min-width: 160px;
@@ -281,152 +283,152 @@ div#block.catalog > div.content {
   margin: 50px auto;
 }
 
-#block.select > div.content > div.item > div.iphone5s_black {
+.block#select > div.content > div.item > div.iphone5s_black {
   background: url(../images/full/iphone_5s/black.jpg) no-repeat;
   background-size: 320px 500px;
   background-position: center;
 }
 
-#block.select > div.content > div.item > div.iphone5s_silver {
+.block#select > div.content > div.item > div.iphone5s_silver {
   background: url(../images/full/iphone_5s/silver.jpg) no-repeat;
   background-size: 322px 500px;
   background-position: center;
 }
 
-#block.select > div.content > div.item > div.iphone5s_gold {
+.block#select > div.content > div.item > div.iphone5s_gold {
   background: url(../images/full/iphone_5s/gold.jpg) no-repeat;
   background-size: 320px 500px;
   background-position: center;
 }
 
-#block.select > div.content > div.item > div.iphone6_black {
+.block#select > div.content > div.item > div.iphone6_black {
   background: url(../images/full/iphone_6/black.png) no-repeat;
   background-size: 280px 500px;
   background-position: center;
 }
 
-#block.select > div.content > div.item > div.iphone6_silver {
+.block#select > div.content > div.item > div.iphone6_silver {
   background: url(../images/full/iphone_6/silver.png) no-repeat;
   background-size: 280px 500px;
   background-position: center;
 }
 
-#block.select > div.content > div.item > div.iphone6_gold {
+.block#select > div.content > div.item > div.iphone6_gold {
   background: url(../images/full/iphone_6/gold.png) no-repeat;
   background-size: 280px 500px;
   background-position: center;
 }
 
-#block.select > div.content > div.item > div.iphone6s_black {
+.block#select > div.content > div.item > div.iphone6s_black {
   background: url(../images/full/iphone_6s/black.png) no-repeat;
   background-size: 280px 500px;
   background-position: center;
 }
 
-#block.select > div.content > div.item > div.iphone6s_silver {
+.block#select > div.content > div.item > div.iphone6s_silver {
   background: url(../images/full/iphone_6s/silver.png) no-repeat;
   background-size: 280px 500px;
   background-position: center;
 }
 
-#block.select > div.content > div.item > div.iphone6s_gold {
+.block#select > div.content > div.item > div.iphone6s_gold {
   background: url(../images/full/iphone_6s/gold.png) no-repeat;
   background-size: 280px 500px;
   background-position: center;
 }
 
-#block.select > div.content > div.item > div.iphone6s_pink{
+.block#select > div.content > div.item > div.iphone6s_pink{
   background: url(../images/full/iphone_6s/pink.png) no-repeat;
   background-size: 280px 500px;
   background-position: center;
 }
 
 
-#block.select > div.content > div.item > div.iphoneSE_black {
+.block#select > div.content > div.item > div.iphoneSE_black {
   background: url(../images/full/iphone_se/black.jpg) no-repeat;
   background-size: 320px 500px;
   background-position: center;
 }
 
-#block.select > div.content > div.item > div.iphoneSE_silver {
+.block#select > div.content > div.item > div.iphoneSE_silver {
   background: url(../images/full/iphone_se/silver.jpg) no-repeat;
   background-size: 320px 500px;
   background-position: center;
 }
 
-#block.select > div.content > div.item > div.iphoneSE_gold {
+.block#select > div.content > div.item > div.iphoneSE_gold {
   background: url(../images/full/iphone_se/gold.jpg) no-repeat;
   background-size: 320px 500px;
   background-position: center;
 }
 
-#block.select > div.content > div.item > div.iphoneSE_pink {
+.block#select > div.content > div.item > div.iphoneSE_pink {
   background: url(../images/full/iphone_se/pink.jpg) no-repeat;
   background-size: 320px 500px;
   background-position: center;
 }
 
-#block.select > div.content > div.item > div.iphone7_black {
+.block#select > div.content > div.item > div.iphone7_black {
   background: url(../images/full/iphone_7/black.png) no-repeat;
   background-size: 280px 500px;
   background-position: center;
 }
 
-#block.select > div.content > div.item > div.iphone7_silver {
+.block#select > div.content > div.item > div.iphone7_silver {
   background: url(../images/full/iphone_7/silver.png) no-repeat;
   background-size: 280px 500px;
   background-position: center;
 }
 
-#block.select > div.content > div.item > div.iphone7_gold {
+.block#select > div.content > div.item > div.iphone7_gold {
   background: url(../images/full/iphone_7/gold.png) no-repeat;
   background-size: 280px 500px;
   background-position: center;
 }
 
-#block.select > div.content > div.item > div.iphone7_pink {
+.block#select > div.content > div.item > div.iphone7_pink {
   background: url(../images/full/iphone_7/pink.png) no-repeat;
   background-size: 280px 500px;
   background-position: center;
 }
 
-#block.select > div.content > div.item > div.iphone7_grey {
+.block#select > div.content > div.item > div.iphone7_grey {
   background: url(../images/full/iphone_7/grey.jpg) no-repeat;
   background-size: 280px 500px;
   background-position: center;
 }
 
-#block.select > div.content > div.item > div.iphone7plus_black {
+.block#select > div.content > div.item > div.iphone7plus_black {
   background: url(../images/full/iphone_7plus/black.png) no-repeat;
   background-size: 280px 500px;
   background-position: center;
 }
 
-#block.select > div.content > div.item > div.iphone7plus_silver {
+.block#select > div.content > div.item > div.iphone7plus_silver {
   background: url(../images/full/iphone_7plus/silver.jpg) no-repeat;
   background-size: 280px 500px;
   background-position: center;
 }
 
-#block.select > div.content > div.item > div.iphone7plus_gold {
+.block#select > div.content > div.item > div.iphone7plus_gold {
   background: url(../images/full/iphone_7plus/gold.jpg) no-repeat;
   background-size: 280px 500px;
   background-position: center;
 }
 
-#block.select > div.content > div.item > div.iphone7plus_pink {
+.block#select > div.content > div.item > div.iphone7plus_pink {
   background: url(../images/full/iphone_7plus/pink.jpg) no-repeat;
   background-size: 280px 500px;
   background-position: center;
 }
 
-#block.select > div.content > div.item > div.iphone7plus_grey {
+.block#select > div.content > div.item > div.iphone7plus_grey {
   background: url(../images/full/iphone_7plus/grey.png) no-repeat;
   background-size: 280px 500px;
   background-position: center;
 }
 
-#block.select > div.content > div.buy_form {
+.block#select > div.content > div.buy_form {
   max-width: 650px;
   min-width: 200px;
   width: 100%;
@@ -435,11 +437,11 @@ div#block.catalog > div.content {
   color: #333333;
 }
 
-#block.select > div.content > div.buy_form > div.block > div.select {
+.block#select > div.content > div.buy_form > div.block > div.select {
   margin: 20px 0px 20px 0px;
 }
 
-#block.select > div.content > div.buy_form > div.block > div.select > div.butt {
+.block#select > div.content > div.buy_form > div.block > div.select > div.butt {
   max-width: 100px;
   width: 100%;
   border: 2px solid #C7C7C7;
@@ -451,7 +453,7 @@ div#block.catalog > div.content {
   margin-bottom: 15px;
 }
 
-#block.select > div.content > div.buy_form > div.block > div.select > div.item {
+.block#select > div.content > div.buy_form > div.block > div.select > div.item {
   max-width: 100px;
   max-height: 130px;
   width: 100%;
@@ -464,27 +466,27 @@ div#block.catalog > div.content {
   margin-bottom: 15px;
 }
 
-#block.select > div.content > div.buy_form > div.block > div.select > div.item:hover,
-#block.select > div.content > div.buy_form > div.block > div.select > div.item.active {
+.block#select > div.content > div.buy_form > div.block > div.select > div.item:hover,
+.block#select > div.content > div.buy_form > div.block > div.select > div.item.active {
   border: 2px solid #52A7F2;  
 }
 
-#block.select > div.content > div.buy_form > div.block > div.select > div.big_size {
+.block#select > div.content > div.buy_form > div.block > div.select > div.big_size {
   max-width: 150px;
 }
 
-#block.select > div.content > div.buy_form > div.block > div.select > div.butt:hover,
-#block.select > div.content > div.buy_form > div.block > div.select > div.butt.active {
+.block#select > div.content > div.buy_form > div.block > div.select > div.butt:hover,
+.block#select > div.content > div.buy_form > div.block > div.select > div.butt.active {
   border: 2px solid #52A7F2;  
 }
 
-#block.select > div.content > div.buy_form > div.block > div.select > div.butt > .name {
+.block#select > div.content > div.buy_form > div.block > div.select > div.butt > .name {
   max-width: 100px;
   width: 100%;
   margin: 0 auto;
 }
 
-#block.select > div.content > div.buy_form > div.block > div.select > div.butt > .color {
+.block#select > div.content > div.buy_form > div.block > div.select > div.butt > .color {
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -492,11 +494,11 @@ div#block.catalog > div.content {
   margin: 6px auto 10px auto;
 }
 
-#block.select > div.content > div.buy_form > div.block > div.select > div.butt > .text {
+.block#select > div.content > div.buy_form > div.block > div.select > div.butt > .text {
   padding: 10px 5px;
 }
 
-#block.select > div.content > div.buy_form > div.block > div.select > div.item > .text {
+.block#select > div.content > div.buy_form > div.block > div.select > div.item > .text {
   padding: 3px;
   background: #9C9C9C;
   color: #ffffff;
@@ -504,47 +506,47 @@ div#block.catalog > div.content {
   border-bottom-right-radius: 2px;
 }
 
-#block.select > div.content > div.buy_form > div.block > div.select > div.butt > .black {
+.block#select > div.content > div.buy_form > div.block > div.select > div.butt > .black {
   background: black;
 }
 
-#block.select > div.content > div.buy_form > div.block > div.select > div.butt > .silver {
+.block#select > div.content > div.buy_form > div.block > div.select > div.butt > .silver {
   background: silver;
 }
 
-#block.select > div.content > div.buy_form > div.block > div.select > div.butt > .pink {
+.block#select > div.content > div.buy_form > div.block > div.select > div.butt > .pink {
   background: pink;
 }
 
-#block.select > div.content > div.buy_form > div.block > div.select > div.butt > .gold {
+.block#select > div.content > div.buy_form > div.block > div.select > div.butt > .gold {
   background: gold;
 }
 
-#block.select > div.content > div.buy_form > div.block > div.select > div.butt > .grey {
+.block#select > div.content > div.buy_form > div.block > div.select > div.butt > .grey {
   background: grey;
 }
 
-#block.select > div.content > div.buy_form > div.block > div.select > div.butt > .red {
+.block#select > div.content > div.buy_form > div.block > div.select > div.butt > .red {
   background: red;
 }
 
-#block.select > div.content > div.buy_form > div.block > div.price,
-#block.select > div.content > div.buy_form > div.block > div.buy {
+.block#select > div.content > div.buy_form > div.block > div.price,
+.block#select > div.content > div.buy_form > div.block > div.buy {
   display: inline-block;
 }
 
-#block.select > div.content > div.buy_form > div.block > div.price {
+.block#select > div.content > div.buy_form > div.block > div.price {
   width: 55%;
   font-size: 28px;
 }
 
-#block.vantage {
+.block#vantage {
   position: relative;
   overflow: hidden;
   min-height: 900px;
 }
 
-#block.vantage > div.content {
+.block#vantage > div.content {
   padding-top: 150px;
   max-width: 1000px;
   position: absolute;
@@ -553,13 +555,13 @@ div#block.catalog > div.content {
   right: 0;
 }
 
-#block.vantage > div.content > h2 {
+.block#vantage > div.content > h2 {
   margin-bottom: 110px;
   font-size: 30px;
 }
 
 
-#block.vantage > div.left_image {
+.block#vantage > div.left_image {
   width: 450px;
   height: 100%;
   background: url(../images/iphone6_left.jpg) no-repeat;
@@ -570,7 +572,7 @@ div#block.catalog > div.content {
   position: absolute;
 }
 
-#block.vantage > div.right_image {
+.block#vantage > div.right_image {
   width: 450px;
   height: 100%;
   right: 0;
@@ -581,110 +583,110 @@ div#block.catalog > div.content {
   overflow: hidden;
 }
 
-#block.vantage > div.content > div.block {
+.block#vantage > div.content > div.block {
   max-width: 1000px;
   margin: 0 auto;
 }
 
-#block.vantage > div.content > div.block > div.line {
+.block#vantage > div.content > div.block > div.line {
   display: block;
   width: 100%;
   min-height: 300px;
   max-height: 600px;
 }
 
-#block.vantage > div.content > div.block > div.line > div.item {
+.block#vantage > div.content > div.block > div.line > div.item {
   display: inline-block;
   width: 300px;
   text-align: center;
 }
 
-#block.vantage > div.content > div.block > div.line > div.item > div.icon {
+.block#vantage > div.content > div.block > div.line > div.item > div.icon {
   width: 120px;
   height: 120px;
   display: block;
 }
 
-#block.vantage > div.content > div.block > div.line > div.item > div.text {
+.block#vantage > div.content > div.block > div.line > div.item > div.text {
   padding: 0px 20px;
   width: 200px;
   text-align: center;
   margin: 0 auto;
 }
 
-#block.vantage > div.content > div.block > div.line > div.item > div.map {
+.block#vantage > div.content > div.block > div.line > div.item > div.map {
   background: url(../images/map-black.png) no-repeat;
   background-position: center;
   background-size: 100px 100px;
   margin: 0 auto;
 }
 
-#block.vantage > div.content > div.block > div.line > div.item > div.gear {
+.block#vantage > div.content > div.block > div.line > div.item > div.gear {
   background: url(../images/gear-black.png) no-repeat;
   background-position: center;
   background-size: 100px 100px;
   margin: 0 auto;
 }
 
-#block.vantage > div.content > div.block > div.line > div.item > div.users {
+.block#vantage > div.content > div.block > div.line > div.item > div.users {
   background: url(../images/users-black.png) no-repeat;
   background-position: center;
   background-size: 100px 100px;
   margin: 0 auto;
 }
 
-#block.vantage > div.content > div.block > div.line > div.item > div.star {
+.block#vantage > div.content > div.block > div.line > div.item > div.star {
   background: url(../images/star-black.png) no-repeat;
   background-position: center;
   background-size: 100px 100px;
   margin: 0 auto;
 }
 
-#block.vantage > div.content > div.block > div.line > div.item > div.clock {
+.block#vantage > div.content > div.block > div.line > div.item > div.clock {
   background: url(../images/clock-black.png) no-repeat;
   background-position: center;
   background-size: 100px 100px;
   margin: 0 auto;
 }
 
-#block.benefit {
+.block#benefit {
   background: #F2F2F2;
 }
 
-#block.benefit > div.content {
+.block#benefit > div.content {
   padding-top: 100px;
 }
 
-#block.benefit > div.content > h2 {
+.block#benefit > div.content > h2 {
   font-size: 30px;
   margin-bottom: 100px;
 }
 
-#block.benefit > div.content > div.block {
+.block#benefit > div.content > div.block {
   max-width: 1000px;
   margin: 0 auto;
 }
 
-#block.benefit > div.content > div.block > div.big_line {
+.block#benefit > div.content > div.block > div.big_line {
   min-height: 220px;
   max-height: 700px;
   overflow: hidden;
   text-align: center;
 }
 
-#block.benefit > div.content > div.block > div.big_line:last-child {
+.block#benefit > div.content > div.block > div.big_line:last-child {
   margin-left: 12%;
 }
 
 
-#block.benefit > div.content > div.block > div.big_line > div.item {
+.block#benefit > div.content > div.block > div.big_line > div.item {
   float: left;
   width: 230px;
   min-height: 170px;
   text-align: center;
 }
 
-#block.benefit > div.content > div.block > div.big_line > div.item > div.icon {
+.block#benefit > div.content > div.block > div.big_line > div.item > div.icon {
   width: 80px;
   height: 80px;
   display: block;
@@ -693,56 +695,56 @@ div#block.catalog > div.content {
   border-radius: 50%;
 }
 
-#block.benefit > div.content > div.block > div.big_line > div.item > div.text {
+.block#benefit > div.content > div.block > div.big_line > div.item > div.text {
   padding: 0px 20px;
   width: 200px;
   text-align: center;
   margin: 0 auto;
 }
 
-#block.benefit > div.content > div.block > div.big_line > div.item > div.smartphone {
+.block#benefit > div.content > div.block > div.big_line > div.item > div.smartphone {
   background: #0CACE8 url(../images/smartphone.png) no-repeat;
   background-position: center;
   background-size: 55px 55px;
 }
 
-#block.benefit > div.content > div.block > div.big_line > div.item > div.file {
+.block#benefit > div.content > div.block > div.big_line > div.item > div.file {
   background: #0CACE8 url(../images/file.png) no-repeat;
   background-position: center;
   background-size: 40px 40px;
 }
 
-#block.benefit > div.content > div.block > div.big_line > div.item > div.gift {
+.block#benefit > div.content > div.block > div.big_line > div.item > div.gift {
   background: #0CACE8 url(../images/gift.png) no-repeat;
   background-position: center;
   background-size: 40px 40px;
 }
 
-#block.benefit > div.content > div.block > div.big_line > div.item > div.geo {
+.block#benefit > div.content > div.block > div.big_line > div.item > div.geo {
   background: #0CACE8 url(../images/geo.png) no-repeat;
   background-position: center;
   background-size: 40px 40px;
 }
 
-#block.benefit > div.content > div.block > div.big_line > div.item > div.gear {
+.block#benefit > div.content > div.block > div.big_line > div.item > div.gear {
   background: #0CACE8 url(../images/gear_2.png) no-repeat;
   background-position: center;
   background-size: 40px 40px;
 }
 
-#block.benefit > div.content > div.block > div.big_line > div.item > div.notepad {
+.block#benefit > div.content > div.block > div.big_line > div.item > div.notepad {
   background: #0CACE8 url(../images/notepad.png) no-repeat;
   background-position: center;
   background-size: 40px 40px;
 }
 
-#block.benefit > div.content > div.block > div.big_line > div.item > div.percent {
+.block#benefit > div.content > div.block > div.big_line > div.item > div.percent {
   background: #0CACE8 url(../images/percent.png) no-repeat;
   background-position: center;
   background-size: 40px 40px;
 }
 
-#block.guarantee {
+.block#guarantee {
   height: 650px;
   background: url(../images/guaranty-talon.jpg) no-repeat;
   background-size: 700px 550px;
@@ -750,105 +752,105 @@ div#block.catalog > div.content {
   padding-bottom: 50px;
 }
 
-#block.guarantee > div.content {
+.block#guarantee > div.content {
   padding-top: 20px;
   padding-bottom: 50px;
   max-width: 1200px;
   height: 100%;
 }
 
-#block.guarantee > div.content > div.left {
+.block#guarantee > div.content > div.left {
   max-width: 650px;
   width: 100%;
   padding-top: 200px;
   float: left;
 }
 
-#block.guarantee > div.content > div.left > h2 {
+.block#guarantee > div.content > div.left > h2 {
   font-size: 44px;
   margin-bottom: 30px;
 }
 
-#block.guarantee > div.content > div.left > h3 {
+.block#guarantee > div.content > div.left > h3 {
   font-size: 24px;
   margin: 5px 0px;
   margin-bottom: 20px;
 }
 
-#block.guarantee > div.content > div.left > div.text {
+.block#guarantee > div.content > div.left > div.text {
   font-size: 18px;
 }
 
-#block.delivery {
+.block#delivery {
   background: #F2F2F2;
 }
 
-#block.delivery > div.content {
+.block#delivery > div.content {
   padding-top: 100px;
   padding-bottom: 100px;
 }
 
-#block.delivery > div.content > h2 {
+.block#delivery > div.content > h2 {
   font-size: 44px;
   margin-bottom: 20px;
 }
 
-#block.delivery > div.content > h3 {
+.block#delivery > div.content > h3 {
   font-size: 24px;
   margin: 5px 0px;
   margin-bottom: 20px;
 }
 
-#block.delivery > div.content > div.block {
+.block#delivery > div.content > div.block {
   max-width: 750px;
   margin: 0 auto;
 }
 
-#block.delivery > div.content > div.block > div.line {
+.block#delivery > div.content > div.block > div.line {
   display: block;
   width: 100%;
   min-height: 250px;
 }
 
-#block.delivery > div.content > div.block > div.line > div.item {
+.block#delivery > div.content > div.block > div.line > div.item {
   width: 49%;
   float: left;
 }
 
-#block.delivery > div.content > div.block > div.line > div.item > div.icon {
+.block#delivery > div.content > div.block > div.line > div.item > div.icon {
   width: 140px;
   height: 140px;
   display: block;
   margin: 0 auto;
 }
 
-#block.delivery > div.content > div.block > div.line > div.item > div.text {
+.block#delivery > div.content > div.block > div.line > div.item > div.text {
   padding: 0px 20px;
   max-width: 200px;
   text-align: center;
   margin: 0 auto;
 }
 
-#block.delivery > div.content > div.block > div.line > div.item > div.navigation {
+.block#delivery > div.content > div.block > div.line > div.item > div.navigation {
   background: url(../images/map-blue.png) no-repeat;
   background-position: center;
   background-size: 90px 90px;
 }
 
-#block.delivery > div.content > div.block > div.line > div.item > div.map {
+.block#delivery > div.content > div.block > div.line > div.item > div.map {
   background: url(../images/navigation-blue.png) no-repeat;
   background-position: center;
   background-size: 90px 90px;
 }
 
-#block.delivery > div.content > div.text {
+.block#delivery > div.content > div.text {
   max-width: 700px;
   margin: 0 auto;
   text-align: center;
   font-size: 18px;
 }
 
-#block.about {
+.block#about {
   background: url(../images/about.jpg) no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -858,36 +860,36 @@ div#block.catalog > div.content {
   height: 400px;
 }
 
-#block.about > div.content > h2 {
+.block#about > div.content > h2 {
   color: #ffffff;
   font-size: 28px;
   margin-top: 50px;
 }
 
-#block.about > div.content > div.text {
+.block#about > div.content > div.text {
   display: block;
   max-width: 700px;
   margin: 25px auto;
   font-size: 18px;
 }
 
-#block.reviews {
+.block#reviews {
   background: #f2f2f2;
   height: 650px;
 }
 
-#block.reviews > div.content {
+.block#reviews > div.content {
   height: 100%;
   max-width: 1300px;
 }
 
-#block.reviews > div.content > h2 {
+.block#reviews > div.content > h2 {
   color: #333333;
   font-size: 28px;
   margin: 50px 0px;
 }
 
-#block.reviews > div.content > div.left {
+.block#reviews > div.content > div.left {
   width: 110px;
   height: 100%;
   background: url(../images/left.png) no-repeat;
@@ -896,7 +898,7 @@ div#block.catalog > div.content {
   float: left;
 }
 
-#block.reviews > div.content > div.right {
+.block#reviews > div.content > div.right {
   width: 110px;
   height: 100%;
   background: url(../images/right.png) no-repeat;
@@ -905,7 +907,7 @@ div#block.catalog > div.content {
   float: right;
 }
 
-#block.reviews > div.content > div.reviews {
+.block#reviews > div.content > div.reviews {
   max-width: 1000px;
   margin-left: 210px;
   overflow: hidden;
@@ -913,7 +915,7 @@ div#block.catalog > div.content {
   text-align: center;
 }
 
-#block.reviews > div.content > div.reviews > div.review {
+.block#reviews > div.content > div.reviews > div.review {
   float: left;
   max-width: 260px;
   min-width: 150px;
@@ -923,28 +925,28 @@ div#block.catalog > div.content {
   padding: 40px 0;
 }
 
-#block.reviews > div.content > div.reviews > div.review > img,
-#block.reviews > div.content > div.reviews > div.review > h3,
-#block.reviews > div.content > div.reviews > div.review > div {
+.block#reviews > div.content > div.reviews > div.review > img,
+.block#reviews > div.content > div.reviews > div.review > h3,
+.block#reviews > div.content > div.reviews > div.review > div {
   display: block;
   margin: 10px auto;
 }
 
-#block.reviews > div.content > div.reviews > div.review > img {
+.block#reviews > div.content > div.reviews > div.review > img {
   width: 120px;
   height: 120px;
   border-radius: 50%;
 }
 
-#block.reviews > div.content > div.reviews > div.review > h3.name {
+.block#reviews > div.content > div.reviews > div.review > h3.name {
   font-size: 20px;
 }
 
-#block.reviews > div.content > div.reviews > div.review > div.social {
+.block#reviews > div.content > div.reviews > div.review > div.social {
   margin-top: -10px;
 }
 
-#block.reviews > div.content > div.reviews > div.review > div.social > a.instagram {
+.block#reviews > div.content > div.reviews > div.review > div.social > a.instagram {
   background: url(../images/social/instagram.png) no-repeat;
   background-size: 32px 32px;
   background-position: center;
@@ -954,20 +956,20 @@ div#block.catalog > div.content {
   font-size: 0;
 }
 
-#block.reviews > div.content > div.reviews > div.review > div.text {
+.block#reviews > div.content > div.reviews > div.review > div.text {
   padding: 5px 10px;
 }
 
-#block.buy > div.content {
-  max-width: 1100px
+.block#buy > div.content {
+  max-width: 1110px
 }
 
-#block.buy > div.content > h2 {
+.block#buy > div.content > h2 {
   font-size: #333;
   margin-top: 50px;
 }
 
-#block.buy > div.content > div.description {
+.block#buy > div.content > div.description {
   font-size: 16px;
   color: #4C4C4C;
   padding-top: 10px;
@@ -976,24 +978,24 @@ div#block.catalog > div.content {
   margin-bottom: 70px;
 }
 
-#block.buy > div.content > div.form > div.block {
+.block#buy > div.content > div.form > div.block {
   display: inline-block;
   max-width: 450px;
 }
 
-#block.buy > div.content > div.form > div.block:first-child {
+.block#buy > div.content > div.form > div.block:first-child {
   padding-right: 200px;
 }
 
-#block.buy > div.content > div.form > div.block > input,
-#block.buy > div.content > div.form > div.block > button {
+.block#buy > div.content > div.form > div.block > input,
+.block#buy > div.content > div.form > div.block > button {
   display: block;
   width: 400px;
   padding: 10px 15px;
   margin: 10px 0;
 }
 
-#block.buy > div.content > div.form > div.block > button {
+.block#buy > div.content > div.form > div.block > button {
   width: 435px;
   color: white;
   background: #0CACE8;
@@ -1001,25 +1003,25 @@ div#block.catalog > div.content {
   border-radius: 4px;
 }
 
-#block.buy > div.content > div.form > div.block > input {
+.block#buy > div.content > div.form > div.block > input {
   border: 1px solid #464646;
   border-radius: 4px;
   outline: none;
 }
 
-#block.buy > div.content > div.form > div.block > input.mini-user-icon {
+.block#buy > div.content > div.form > div.block > input.mini-user-icon {
   background: url(../images/mini-user.png) no-repeat;
   background-size: 24px 24px;
   background-position: 97% 50%;
 }
 
-#block.buy > div.content > div.form > div.block > input.mini-smartphone-icon {
+.block#buy > div.content > div.form > div.block > input.mini-smartphone-icon {
   background: url(../images/mini-smartphone.png) no-repeat;
   background-size: 24px 24px;
   background-position: 97% 50%;
 }
 
-#block.buy > div.content > div.form > div.block > div.item {
+.block#buy > div.content > div.form > div.block > div.item {
   width: 450px;
   display: block;
   margin: 15px 0;
@@ -1027,38 +1029,38 @@ div#block.catalog > div.content {
   border: 1px solid #464646;
 }
 
-#block.buy > div.content > div.form > div.block > div.item > div.name,
-#block.buy > div.content > div.form > div.block > div.item > div.text {
+.block#buy > div.content > div.form > div.block > div.item > div.name,
+.block#buy > div.content > div.form > div.block > div.item > div.text {
   display: inline-block;
   text-align: center;
   width: calc(49.5% - 29.5px);
   padding: 10px 15px;
 }
 
-#block.buy > div.content > div.form > div.block > div.item > div.mini-gift-icon {
+.block#buy > div.content > div.form > div.block > div.item > div.mini-gift-icon {
   background: url(../images/mini-gift.png) no-repeat;
   background-size: 24px 24px;
   background-position: 96% 50%;
 }
 
-#block.buy > div.content > div.form > div.block > div.item > div.name {
+.block#buy > div.content > div.form > div.block > div.item > div.name {
   background: #0CACE8;
   color: white;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
 }
 
-#block.map {
+.block#map {
   background: #F2F2F2;
 }
 
-#block.map > div.content > h2 {
+.block#map > div.content > h2 {
   font-size: 28px;
   margin-top: 50px;
   margin-bottom: 50px;
 }
 
-#block.map > div.content > div.text {
+.block#map > div.content > div.text {
   text-align: center;
   font-size: 24px;
   margin-bottom: 80px;
@@ -1148,63 +1150,63 @@ footer > div.phone {
     font-size: 20px;
   }
 
-  #block.select > div.content > div.item {
+  .block#select > div.content > div.item {
     float: none;
     margin-right: 0;
   }
 
-  #block.select > div.content > div.buy_form > div.block {
+  .block#select > div.content > div.buy_form > div.block {
     margin: 80px 50px 0 50px;
   }
 
 
-  #block.benefit > div.content > div.block > div.big_line > div.item {
+  .block#benefit > div.content > div.block > div.big_line > div.item {
     height: 100%;
   }
 
-  #block.benefit > div.content > div.block {
+  .block#benefit > div.content > div.block {
     padding-bottom: 50px;
   }
 
-  #block.guarantee {
+  .block#guarantee {
     background: none;
     background-size: 0 0;
     background-position: 0 0;
   }
 
-  #block.guarantee > div.content > div.left {
+  .block#guarantee > div.content > div.left {
     float: none;
     margin: 0 auto;
   }
 
-  #block.delivery > div.content > div.block > div.line {
+  .block#delivery > div.content > div.block > div.line {
     padding-bottom: 50px;
   }
 
-  #block.delivery > div.content > div.block > div.line > div.item {
+  .block#delivery > div.content > div.block > div.line > div.item {
     float: none;
     display: block;
     text-align: center;
     margin: 0 auto;
   }
   
-  #block.buy > div.content > div.form > div.block {
+  .block#buy > div.content > div.form > div.block {
     display: block;
     margin: 0 auto;
   }
 
-  #block.buy > div.content > div.form > div.block:first-child {
+  .block#buy > div.content > div.form > div.block:first-child {
     padding-right: 0;
   }
 
 }
 
 @media only screen and (max-width: 1000px) {
-  #block.vantage > div.left_image {
+  .block#vantage > div.left_image {
     display: none;
   }
 
-  #block.vantage > div.right_image {
+  .block#vantage > div.right_image {
     display: none;
   }
 }
@@ -1213,26 +1215,26 @@ footer > div.phone {
   header > div#head > div#contact {
     display: none;
   }
-  #block.reviews > div.content > div.left {
+  .block#reviews > div.content > div.left {
     width: 60px;
     background-size: 40px 40px;
   }
 
-  #block.reviews > div.content > div.right {
+  .block#reviews > div.content > div.right {
     width: 60px;
     background-size: 40px 40px;
   }
 
-  #block.reviews > div.content > div.reviews {
+  .block#reviews > div.content > div.reviews {
     margin-left: 80px;
   }
 
-  #block.benefit > div.content > div.block > div.big_line > div.item {
+  .block#benefit > div.content > div.block > div.big_line > div.item {
     margin: 0 auto;
     float: none;
   }
 
-  #block.benefit > div.content > div.block > div.big_line:last-child {
+  .block#benefit > div.content > div.block > div.big_line:last-child {
     margin-left: 0;
   }
 
