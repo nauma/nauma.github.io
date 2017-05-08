@@ -71,10 +71,14 @@ div#head > div#menu > div.list {
   padding: 13px;
 }
 
-div#head > div#menu > div.list > a {
+div#head > div#menu > div.list > a.item {
   margin-right: 15px;
   font-size: 16px;
   text-decoration: none !important;
+}
+
+div#head > div#menu > div.list > a.hide {
+  display: none;
 }
 
 div#block {
@@ -534,54 +538,64 @@ div#block.catalog > div.content {
   font-size: 28px;
 }
 
+#block.vantage {
+  position: relative;
+  overflow: hidden;
+  min-height: 900px;
+}
+
 #block.vantage > div.content {
   padding-top: 150px;
-  max-width: 700px;
+  max-width: 1000px;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
 }
 
 #block.vantage > div.content > h2 {
-  margin-bottom: 150px;
+  margin-bottom: 110px;
   font-size: 30px;
 }
 
-/*
+
 #block.vantage > div.left_image {
   width: 450px;
   height: 100%;
-  float: left;
+  background: url(../images/iphone6_left.jpg) no-repeat;
+  background-position: center 70%;
+  background-size: 430px 430px;
+
   left: 0;
   position: absolute;
-  background: url(../images/iphone6_left.jpg) no-repeat;
-  background-position: center;
-  background-size: 430px 430px;
 }
 
 #block.vantage > div.right_image {
   width: 450px;
   height: 100%;
-  float: right;
   right: 0;
   position: absolute;
   background: url(../images/iphone6s_right.jpg) no-repeat;
-  background-position: center;
+  background-position: center 70%;
   background-size: 430px 430px;
-}*/
+  overflow: hidden;
+}
 
 #block.vantage > div.content > div.block {
-  max-width: 700px;
+  max-width: 1000px;
   margin: 0 auto;
-
 }
 
 #block.vantage > div.content > div.block > div.line {
   display: block;
   width: 100%;
-  height: 300px;
+  min-height: 300px;
+  max-height: 600px;
 }
 
 #block.vantage > div.content > div.block > div.line > div.item {
   display: inline-block;
-  width: 49%;
+  width: 300px;
   text-align: center;
 }
 
@@ -619,6 +633,13 @@ div#block.catalog > div.content {
   margin: 0 auto;
 }
 
+#block.vantage > div.content > div.block > div.line > div.item > div.star {
+  background: url(../images/star-black.png) no-repeat;
+  background-position: center;
+  background-size: 100px 100px;
+  margin: 0 auto;
+}
+
 #block.vantage > div.content > div.block > div.line > div.item > div.clock {
   background: url(../images/clock-black.png) no-repeat;
   background-position: center;
@@ -646,6 +667,9 @@ div#block.catalog > div.content {
 
 #block.benefit > div.content > div.block > div.big_line {
   min-height: 220px;
+  max-height: 700px;
+  overflow: hidden;
+  text-align: center;
 }
 
 #block.benefit > div.content > div.block > div.big_line:last-child {
@@ -656,6 +680,7 @@ div#block.catalog > div.content {
 #block.benefit > div.content > div.block > div.big_line > div.item {
   float: left;
   width: 230px;
+  min-height: 170px;
   text-align: center;
 }
 
@@ -979,6 +1004,19 @@ div#block.catalog > div.content {
 #block.buy > div.content > div.form > div.block > input {
   border: 1px solid #464646;
   border-radius: 4px;
+  outline: none;
+}
+
+#block.buy > div.content > div.form > div.block > input.mini-user-icon {
+  background: url(../images/mini-user.png) no-repeat;
+  background-size: 24px 24px;
+  background-position: 97% 50%;
+}
+
+#block.buy > div.content > div.form > div.block > input.mini-smartphone-icon {
+  background: url(../images/mini-smartphone.png) no-repeat;
+  background-size: 24px 24px;
+  background-position: 97% 50%;
 }
 
 #block.buy > div.content > div.form > div.block > div.item {
@@ -995,6 +1033,12 @@ div#block.catalog > div.content {
   text-align: center;
   width: calc(49.5% - 29.5px);
   padding: 10px 15px;
+}
+
+#block.buy > div.content > div.form > div.block > div.item > div.mini-gift-icon {
+  background: url(../images/mini-gift.png) no-repeat;
+  background-size: 24px 24px;
+  background-position: 96% 50%;
 }
 
 #block.buy > div.content > div.form > div.block > div.item > div.name {
@@ -1113,14 +1157,9 @@ footer > div.phone {
     margin: 80px 50px 0 50px;
   }
 
-  #block.benefit > div.content > div.block > div.big_line > div.item {
-    float: none;
-    display: inline-block;
-    margin: 0 auto;
-  }
 
-  #block.benefit > div.content > div.block > div.big_line:last-child {
-    margin-left: 0;
+  #block.benefit > div.content > div.block > div.big_line > div.item {
+    height: 100%;
   }
 
   #block.benefit > div.content > div.block {
@@ -1160,7 +1199,20 @@ footer > div.phone {
 
 }
 
+@media only screen and (max-width: 1000px) {
+  #block.vantage > div.left_image {
+    display: none;
+  }
+
+  #block.vantage > div.right_image {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 650px) {
+  header > div#head > div#contact {
+    display: none;
+  }
   #block.reviews > div.content > div.left {
     width: 60px;
     background-size: 40px 40px;
@@ -1174,4 +1226,14 @@ footer > div.phone {
   #block.reviews > div.content > div.reviews {
     margin-left: 80px;
   }
+
+  #block.benefit > div.content > div.block > div.big_line > div.item {
+    margin: 0 auto;
+    float: none;
+  }
+
+  #block.benefit > div.content > div.block > div.big_line:last-child {
+    margin-left: 0;
+  }
+
 }

@@ -1,11 +1,13 @@
 document.getElementById('open-menu').onclick = function() {document.getElementsByTagName('header')[0].id = 'open';}
 document.getElementById('close-menu').onclick = function() {document.getElementsByTagName('header')[0].id = '';}
 
+// local data
 window.global = {};
 window.global.activePhone = {
   code: 'iphone5s'
 };
 
+// Select iPhone
 $('.button2.selectPhone').click(function(event){
   window.global.activePhone.code = $(this).attr('class').split(' ')[2];
 
@@ -29,45 +31,72 @@ $('.button2.selectPhone').click(function(event){
   window.global.activePhone.rom = null;
   $('.image.'+window.global.activePhone.code+'_'+window.global.activePhone.color).css({display: 'block'});
   $('.price_block').css({display: 'none'});
+
+  $('#out_price').text('Выберите модель');
+  $('#model_name').text('Выберите модель');
+  $('#gift_name').html('&nbsp;');
 });
 
-
+// Select color iPhone
 $('.butt.select_color').click(function(event){
   clearColor();
+  // set active button
   $(this).addClass('active');
 
+  // get phone colors
   var list = $('.content.'+window.global.activePhone.code+'>.item.phone_color_photos').children();
-  console.log(list)
+  // hide all block colors
   for (var i = 0; i < list.length; i++) $(list[i]).css({display: 'none'});
-
+  // get block name color
   var color = $(this).attr('data-color');
+  // get active phone name(code)
   var model = window.global.activePhone.code;
+  // display phone image
   $('.image.'+model+'_'+color).css({display: 'block'});
+  // display phone name
   $('.phone_color_photos > .name').css({display: 'block'});
+
+  // save phone color to local data
   window.global.activePhone.color = color;
 });
 
+// Select ROM iPhone
 $('.butt.select_rom').click(function(event){
   clearRom();
+  // set active button
   $(this).addClass('active');
-
+  // get phone price
   var price = +$(this).attr('data-price');
+  // save phone rom on local data
   window.global.activePhone.rom = $.trim($(this).text());
+  // save phone price to local data
   window.global.activePhone.price = price;
 
+  var out_price = window.global.activePhone.price + ' руб.';
+  var model_name = $('.content.'+window.global.activePhone.code+'>.item.phone_color_photos>h2').text();
 
+  // get phone fake price
   $('.phone_face_price').text((window.global.activePhone.price + 2547 ) + ' руб.');
-  $('.phone_real_price').text(window.global.activePhone.price + ' руб.');
+  // get phone real price
+  $('.phone_real_price').text(out_price);
+  $('#out_price').text(out_price);
+  // get phone name
+  $('#model_name').text(model_name);
+  // render price block
   $('.price_block').css({display: 'block'});
 });
 
 $('.item.select_gift').click(function(event){
   clearGift();
+  // set active button
   $(this).addClass('active');
-
+  // save selected gift to local data
   window.global.activePhone.gift = $.trim($(this).text());
+  // render selected gift name
+  $('#gift_name').text(window.global.activePhone.gift);
 });
 
+// old Functions //
 var clearColor = function() {
   var list = $('.select.select_color').children();
   for (var i = 0; i < list.length; i++) $(list[i]).removeClass('active');
@@ -82,3 +111,23 @@ var clearGift = function() {
   var list = $('.select.select_gift').children();
   for (var i = 0; i < list.length; i++) $(list[i]).removeClass('active');
 }
+
+$(document).on('click', 'a[href^="#"]', function(e) {
+  // target element id
+  var id = $(this).attr('href');
+
+  // target element
+  var $id = $(id);
+  if ($id.length === 0) {
+      return;
+  }
+
+  // prevent standard hash navigation (avoid blinking in IE)
+  e.preventDefault();
+
+  // top position relative to the document
+  var pos = $id.offset().top;
+
+  // animated top scrolling
+  $('body, html').animate({scrollTop: pos});
+});

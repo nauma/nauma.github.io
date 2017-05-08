@@ -5,12 +5,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/fm.revealator.jquery.css">
 </head>
 <body>
 
   <content>
     <div id="block" class="header">
-      <div class="header_text">
+      <div class="header_text revealator-slideup">
         <h1>Магазин оригинальной техники Apple</h1>
         <p>Выгодные цены. Доставка в день заказа</p>
         <button class="gotext button">Товары со скидкой</button>
@@ -23,7 +24,7 @@
         <h1>Каталог продукции</h1>
         <p>Выберите нужную для вас модель iPhone</p>
 
-        <div class="phone_list">
+        <div class="phone_list revealator-slideup">
           <div class="phone">
             <div class="image iphone5s">&nbsp;</div>
             <div class="name">iPhone 5s</div>
@@ -70,14 +71,14 @@
 
     <div id="block" class="select">
       <div class="content iphone5s">
-        <div class="item phone_color_photos">
+        <div class="item phone_color_photos revealator-slideright">
           <h2 class="name">iPhone 5s</h2>
           <div class="image iphone5s_black">&nbsp;</div>
           <div class="image iphone5s_silver" style="display: none;">&nbsp;</div>
           <div class="image iphone5s_gold" style="display: none;">&nbsp;</div>
         </div>
 
-        <div class="buy_form">
+        <div class="buy_form revealator-slideleft">
           <div class="block">
             <h3>Выберите цвет:</h3>
             <div class="select select_color">
@@ -135,7 +136,7 @@
             </div>
           </div>
 
-          <div class="block price_block" style="display: none">
+          <div class="block price_block " style="display: none">
             <h2>Стоимость со скидкой:</h2>
             <h4><s class="phone_face_price"></s></h4>
             <div class="price">
@@ -150,14 +151,14 @@
       </div>
 
       <div class="content iphone6" style="display: none;">
-        <div class="item phone_color_photos">
+        <div class="item phone_color_photos revealator-slideright">
           <h2 class="name">iPhone 6</h2>
           <div class="image iphone6_black">&nbsp;</div>
           <div class="image iphone6_silver" style="display: none;">&nbsp;</div>
           <div class="image iphone6_gold" style="display: none;">&nbsp;</div>
         </div>
 
-        <div class="buy_form">
+        <div class="buy_form revealator-slideleft">
           <div class="block">
             <h3>Выберите цвет:</h3>
             <div class="select select_color">
@@ -230,7 +231,7 @@
       </div>
 
       <div class="content iphone6s" style="display: none;">
-        <div class="item phone_color_photos">
+        <div class="item phone_color_photos revealator-slideright">
           <h2 class="name">iPhone 6s</h2>
           <div class="image iphone6s_black">&nbsp;</div>
           <div class="image iphone6s_silver" style="display: none;">&nbsp;</div>
@@ -238,7 +239,7 @@
           <div class="image iphone6s_pink" style="display: none;">&nbsp;</div>
         </div>
 
-        <div class="buy_form">
+        <div class="buy_form revealator-slideleft">
           <div class="block">
             <h3>Выберите цвет:</h3>
             <div class="select select_color">
@@ -320,7 +321,7 @@
       </div>
 
       <div class="content iphoneSE" style="display: none;">
-        <div class="item phone_color_photos">
+        <div class="item phone_color_photos revealator-slideright">
           <h2 class="name">iPhone SE</h2>
           <div class="image iphoneSE_black">&nbsp;</div>
           <div class="image iphoneSE_silver" style="display: none;">&nbsp;</div>
@@ -328,7 +329,7 @@
           <div class="image iphoneSE_pink" style="display: none;">&nbsp;</div>
         </div>
 
-        <div class="buy_form">
+        <div class="buy_form revealator-slideleft">
           <div class="block">
             <h3>Выберите цвет:</h3>
             <div class="select select_color">
@@ -402,7 +403,7 @@
       </div>
 
       <div class="content iphone7" style="display: none;">
-        <div class="item phone_color_photos">
+        <div class="item phone_color_photos revealator-slideright">
           <h2 class="name">iPhone 7</h2>
           <div class="image iphone7_black">&nbsp;</div>
           <div class="image iphone7_silver" style="display: none;">&nbsp;</div>
@@ -411,7 +412,7 @@
           <div class="image iphone7_pink" style="display: none;">&nbsp;</div>
         </div>
 
-        <div class="buy_form">
+        <div class="buy_form revealator-slideleft">
           <div class="block">
             <h3>Выберите цвет:</h3>
             <div class="select select_color">
@@ -494,7 +495,7 @@
       </div>
 
       <div class="content iphone7plus" style="display: none;">
-        <div class="item phone_color_photos">
+        <div class="item phone_color_photos revealator-slideright">
           <h2 class="name">iPhone 7+</h2>
           <div class="image iphone7plus_black">&nbsp;</div>
           <div class="image iphone7plus_silver" style="display: none;">&nbsp;</div>
@@ -503,7 +504,7 @@
           <div class="image iphone7plus_pink" style="display: none;">&nbsp;</div>
         </div>
 
-        <div class="buy_form">
+        <div class="buy_form ">
           <div class="block">
             <h3>Выберите цвет:</h3>
             <div class="select select_color">
@@ -587,7 +588,9 @@
     </div>
 
     <div id="block" class="vantage">
-      <div class="content">
+      <div class="left_image revealator-slideright">&nbsp;</div>
+      <div class="right_image revealator-slideleft">&nbsp;</div>
+      <div class="content revealator-slideup">
         <h2>Преимущество нашего магазина</h2>
         <div class="block">
           <div class="line">
@@ -598,6 +601,10 @@
             <div class="item">
               <div class="icon users">&nbsp;</div>
               <div class="text">Наша команда сотрудников профессионалы своего дела</div>
+            </div>
+            <div class="item">
+              <div class="icon star">&nbsp;</div>
+              <div class="text">Лучшие цены на рынке.<br>Дешевле не найти</div>
             </div>
           </div>
           <div class="line">
@@ -612,12 +619,10 @@
           </div>
         </div>
       </div>
-      <div class="left_image">&nbsp;</div>
-      <div class="right_image">&nbsp;</div>
     </div>
 
     <div id="block" class="benefit">
-      <div class="content">
+      <div class="content revealator-slideup">
         <h2>Покупая iPhone у нас вы получаете</h2>
         <div class="block">
           <div class="big_line">
@@ -656,8 +661,8 @@
       </div>
     </div>
 
-    <div id="block" class="guarantee">
-      <div class="content">
+    <div id="block" class="guarantee revealator-slideup">
+      <div class="content ">
         <div class="left">
           <h2>Гарантия и поддержка</h2>
           <h3>Гарантия на всю продукцию 1 год.</h3>
@@ -670,28 +675,28 @@
 
     <div id="block" class="delivery">
       <div class="content">
-        <h2>Доставка и самовывоз</h2>
-        <h3>Быстро и надежно</h3>
+        <h2 class="revealator-slideup">Доставка и самовывоз</h2>
+        <h3 class="revealator-slideup">Быстро и надежно</h3>
         <div class="block">
           <div class="line">
-            <div class="item">
+            <div class="item revealator-slideright">
               <div class="icon navigation">&nbsp;</div>
               <div class="text">Доставка до адреса</div>
             </div>
-            <div class="item">
+            <div class="item revealator-slideleft">
               <div class="icon map">&nbsp;</div>
               <div class="text">Доставка до метро бесплатно</div>
             </div>
           </div>
         </div>
-        <div class="text">
+        <div class="text revealator-slideup">
           В целях безопасности доставка осуществляется на домашние и робочие адреса получателя при наличии стационарного телефона.<br>Вы можете отменить заказ до приезда курьера. После приезда курьера вы обязуетесь оплатить доставку вне зависимости от принятия товара.<br>Притензии по внешнему виду и комплектации принимаются только в присутствии курьера. 
         </div>
       </div>
     </div>
 
     <div id="block" class="about">
-      <div class="content">
+      <div class="content revealator-slideup">
         <h2>Наша компания</h2>
         <div class="text">Наш магазин существует с 2014 года и специализируется на оптоворозничной торговле
 техникой Аррlе. С нами вы будете уверенны в том, что покупаете понастоящему
@@ -704,10 +709,10 @@
 
     <div id="block" class="reviews">
       <div class="content">
-        <h2>Отзывы покупателей el apple</h2>
-        <div class="left">&nbsp;</div>
-        <div class="right">&nbsp;</div>
-        <div class="reviews">
+        <h2 class="revealator-slideup">Отзывы покупателей el apple</h2>
+        <div class="left item revealator-slideleft">&nbsp;</div>
+        <div class="right item revealator-slideright">&nbsp;</div>
+        <div class="reviews revealator-slideup">
           <div class="review">
             <img src="users/otz1.png">
             <h3>Имя</h3>
@@ -746,28 +751,28 @@
 
     <div id="block" class="buy">
       <div class="content">
-        <h2>Оформление заказа</h2>
-        <div class="description">Заполните форму, и наши менеджеры свяжутся с вами в течении часа</div>
+        <h2 class="revealator-slideup">Оформление заказа</h2>
+        <div class="description revealator-slideup">Заполните форму, и наши менеджеры свяжутся с вами в течении часа</div>
         <div class="form">
-          <div class="block">
-            <input type="text" placeholder="Ваше имя">
-            <input type="text" placeholder="Контактный телефон">
+          <div class="block revealator-slideright">
+            <input type="text" class="mini-user-icon" placeholder="Ваше имя">
+            <input type="text" class="mini-smartphone-icon" placeholder="Контактный телефон">
             <button>Отправить</button>
           </div>
-          <div class="block">
+          <div class="block revealator-slideleft">
             <div class="item">
               <div class="name">Выбранная модель</div>
-              <div class="text">Выберите модель</div>
+              <div class="text" id="model_name">Выберите модель</div>
             </div>
 
             <div class="item">
               <div class="name">Цена</div>
-              <div class="text">Выберите модель</div>
+              <div class="text" id="out_price">Выберите модель</div>
             </div>
 
             <div class="item">
               <div class="name">Ваш подарок:</div>
-              <div class="text"></div>
+              <div class="text mini-gift-icon" id="gift_name">&nbsp;</div>
             </div>
           </div>
         </div>
@@ -775,7 +780,7 @@
     </div>
 
     <div id="block" class="map">
-      <div class="content">
+      <div class="content revealator-slideup">
         <h2>Контакты</h2>
         <div class="text">
           г.Москва, Багратионовский проезд д.7,<br>
@@ -784,13 +789,13 @@
           +7(910)-002-25-05
         </div>
       </div>
-      <!--<iframe
+      <iframe class="revealator-fade" 
         width="100%"
         height="500px"
         frameborder="0" style="border:0"
         src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDEKBGXvKLDaAZ7tAnfIlqyThVuqBXIEMU
           &q=Ukraine+Kiev+Майдан" allowfullscreen>
-      </iframe>-->
+      </iframe>
     </div>
   </content>
 
@@ -817,6 +822,8 @@
           <a class="item">Доставка</a>
           <a class="item">Отзывы</a>
           <a class="item">Контакты</a>
+          <br>
+          <a class="item hide">8-968-590-60-58</a>
         </div>
       </div>
 
@@ -825,6 +832,7 @@
     </div>
   </header>
   <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/fm.revealator.jquery.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
