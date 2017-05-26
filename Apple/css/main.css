@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: myraid;
-  src: url(../fonts/myriad-set-pro_thin.ttf);
+  src: url(../fonts/myriad-set-pro_thin.woff);
 }
 
 body {
@@ -18,9 +18,11 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
 
+.wow { visibility: hidden; }
+
 header {
   background: #212121;
-  height: 51px;
+  height: 57px;
   width: 100%;
   top: 0;
   color: white;
@@ -50,9 +52,10 @@ div#head > a#logo {
   display: block;
   width: 80px;
   padding: 10px 15px;
-  height: 51px;
+  height: 55px;
   background: url('../images/logo.png') 5px 8px no-repeat;
-  background-size: 27px 32px;
+  background-size: 28px 35px;
+  margin-top: 3px;
 }
 
 div#head > div#contact {
@@ -72,7 +75,7 @@ div#head > div#menu > div.list {
 }
 
 div#head > div#menu > div.list > a.item {
-  margin-right: 15px;
+  margin: 15px;
   font-size: 16px;
   text-decoration: none !important;
   color: white;
@@ -99,7 +102,7 @@ div.block > div.content {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 95vh;
 }
 
 #header .header_text {
@@ -119,6 +122,7 @@ div.block > div.content {
 
 #header .header_text .gotext {
   margin-bottom: 70px;
+  font-size: 16px;
 }
 
 #header .header_text p {
@@ -129,7 +133,7 @@ div.block > div.content {
 
 #header .goto {
   left: 50%;
-  bottom: 0;
+  bottom: 10vh;
   width: 100px;
   height: 100px;
   background: url('../images/button.png') no-repeat;
@@ -138,6 +142,7 @@ div.block > div.content {
   border: none;
   transform: translateX(-50%);
   outline: none;
+  text-decoration: none;
 }
 
 .button {
@@ -161,6 +166,7 @@ div.block > div.content {
   border: 1px solid #8c8c8c;
   padding: 5px 27px;
   outline: none;
+  text-decoration: none;
 }
 
 .button2:hover,
@@ -261,6 +267,18 @@ div.block#catalog > div.content {
   display: inline-block;
 }
 
+.block#select > div.content > div.buy_form > div.block > h3 {
+  font-size: 23px;
+}
+
+.block#select > div.content > div.buy_form > div.block > h3.fake {
+  padding: 13px 10px;
+}
+
+.block#select > div.content > div.buy_form > div.block > h4 {
+  margin: 8px 0px;
+}
+
 .block#select > div.content > div.item {
   max-width: 400px;
   min-width: 160px;
@@ -268,6 +286,7 @@ div.block#catalog > div.content {
   width: 100%;
   float: left;
   margin-right: 100px;
+  margin-top: 80px;
 }
 
 .block#select > div.content > div.item > .name {
@@ -454,8 +473,9 @@ div.block#catalog > div.content {
 }
 
 .block#select > div.content > div.buy_form > div.block > div.select > div.item {
-  max-width: 100px;
-  max-height: 130px;
+  max-width: 130px;
+  min-height: 130px;
+  max-height: 150px;
   width: 100%;
   height: 100%;
   border: 2px solid #C7C7C7;
@@ -504,14 +524,17 @@ div.block#catalog > div.content {
   color: #ffffff;
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  margin-bottom: -1px;
+  margin-top: 1px;
 }
 
 .block#select > div.content > div.buy_form > div.block > div.select > div.butt > .black {
-  background: black;
+  background: #000000;
 }
 
 .block#select > div.content > div.buy_form > div.block > div.select > div.butt > .silver {
-  background: silver;
+  background: #f1f1f1;
+  box-shadow: 0 3px 5px #999 inset;
 }
 
 .block#select > div.content > div.buy_form > div.block > div.select > div.butt > .pink {
@@ -519,15 +542,18 @@ div.block#catalog > div.content {
 }
 
 .block#select > div.content > div.buy_form > div.block > div.select > div.butt > .gold {
-  background: gold;
+  background: #f4bf88;
+  box-shadow: 0 3px 5px #B78E68 inset;
 }
 
 .block#select > div.content > div.buy_form > div.block > div.select > div.butt > .grey {
   background: grey;
+  box-shadow: 0 3px 5px #555 inset;
 }
 
 .block#select > div.content > div.buy_form > div.block > div.select > div.butt > .red {
   background: red;
+  box-shadow: 0 3px 5px #999 inset;
 }
 
 .block#select > div.content > div.buy_form > div.block > div.price,
@@ -535,9 +561,18 @@ div.block#catalog > div.content {
   display: inline-block;
 }
 
+.block#select > div.content > div.buy_form > div.block > div.buy > a {
+  font-size: 23px;
+  padding: 10px 20px;
+}
+
 .block#select > div.content > div.buy_form > div.block > div.price {
-  width: 55%;
+  width: calc(100% - 310px);
   font-size: 28px;
+}
+
+.block#select > div.content > div.buy_form > div.price_block {
+  min-height: 150px;
 }
 
 .block#vantage {
@@ -687,8 +722,8 @@ div.block#catalog > div.content {
 }
 
 .block#benefit > div.content > div.block > div.big_line > div.item > div.icon {
-  width: 80px;
-  height: 80px;
+  width: 95px;
+  height: 95px;
   display: block;
   margin: 10px auto;
   background: #0CACE8;
@@ -705,43 +740,43 @@ div.block#catalog > div.content {
 .block#benefit > div.content > div.block > div.big_line > div.item > div.smartphone {
   background: #0CACE8 url(../images/smartphone.png) no-repeat;
   background-position: center;
-  background-size: 55px 55px;
+  background-size: 57px 57px;
 }
 
 .block#benefit > div.content > div.block > div.big_line > div.item > div.file {
   background: #0CACE8 url(../images/file.png) no-repeat;
   background-position: center;
-  background-size: 40px 40px;
+  background-size: 57px 57px;
 }
 
 .block#benefit > div.content > div.block > div.big_line > div.item > div.gift {
   background: #0CACE8 url(../images/gift.png) no-repeat;
   background-position: center;
-  background-size: 40px 40px;
+  background-size: 57px 57px;
 }
 
 .block#benefit > div.content > div.block > div.big_line > div.item > div.geo {
   background: #0CACE8 url(../images/geo.png) no-repeat;
   background-position: center;
-  background-size: 40px 40px;
+  background-size: 57px 57px;
 }
 
 .block#benefit > div.content > div.block > div.big_line > div.item > div.gear {
   background: #0CACE8 url(../images/gear_2.png) no-repeat;
   background-position: center;
-  background-size: 40px 40px;
+  background-size: 57px 57px;
 }
 
 .block#benefit > div.content > div.block > div.big_line > div.item > div.notepad {
   background: #0CACE8 url(../images/notepad.png) no-repeat;
   background-position: center;
-  background-size: 40px 40px;
+  background-size: 57px 57px;
 }
 
 .block#benefit > div.content > div.block > div.big_line > div.item > div.percent {
   background: #0CACE8 url(../images/percent.png) no-repeat;
   background-position: center;
-  background-size: 40px 40px;
+  background-size: 57px 57px;
 }
 
 .block#guarantee {
@@ -875,12 +910,12 @@ div.block#catalog > div.content {
 
 .block#reviews {
   background: #f2f2f2;
-  height: 650px;
+  height: 950px;
 }
 
 .block#reviews > div.content {
   height: 100%;
-  max-width: 1300px;
+  max-width: 1200px;
 }
 
 .block#reviews > div.content > h2 {
@@ -889,39 +924,45 @@ div.block#catalog > div.content {
   margin: 50px 0px;
 }
 
-.block#reviews > div.content > div.left {
+.block#reviews > div.content > button.left {
   width: 110px;
   height: 100%;
   background: url(../images/left.png) no-repeat;
   background-position: center 30%;
   background-size: 80px 80px;
   float: left;
+  cursor: pointer;
+  border: none;
+  outline: none;
 }
 
-.block#reviews > div.content > div.right {
+.block#reviews > div.content > button.right {
   width: 110px;
   height: 100%;
   background: url(../images/right.png) no-repeat;
   background-position: center 30%;
   background-size: 80px 80px;
   float: right;
+  cursor: pointer;
+  outline: none;
+  border: none;
 }
 
 .block#reviews > div.content > div.reviews {
-  max-width: 1000px;
-  margin-left: 210px;
+  max-width: 800px;
+  height: 770px;
+  margin: auto;
   overflow: hidden;
-  height: 400px;
-  text-align: center;
 }
 
 .block#reviews > div.content > div.reviews > div.review {
   float: left;
-  max-width: 260px;
-  min-width: 150px;
+  max-width: 360px;
+  width: 100%;
   background: white;
   height: 100%;
-  margin-right: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
   padding: 40px 0;
 }
 
@@ -948,20 +989,33 @@ div.block#catalog > div.content {
 
 .block#reviews > div.content > div.reviews > div.review > div.social > a.instagram {
   background: url(../images/social/instagram.png) no-repeat;
-  background-size: 32px 32px;
+  background-size: 38px 38px;
   background-position: center;
   display: inline-block;
-  width: 32px;
-  height: 32px;
+  width: 38px;
+  height: 38px;
   font-size: 0;
+  text-decoration: none;
+}
+
+.block#reviews > div.content > div.reviews > div.review > div.social > a.vkontakte {
+  background: url(../images/social/vk.png) no-repeat;
+  background-size: 38px 38px;
+  background-position: center;
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+  font-size: 0;
+  text-decoration: none;
 }
 
 .block#reviews > div.content > div.reviews > div.review > div.text {
-  padding: 5px 10px;
+  padding: 5px 30px;
 }
 
 .block#buy > div.content {
-  max-width: 1110px
+  max-width: 1110px;
+  min-height: 500px;
 }
 
 .block#buy > div.content > h2 {
@@ -1066,6 +1120,58 @@ div.block#catalog > div.content {
   margin-bottom: 80px;
 }
 
+div#popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.7;
+  display: none;
+}
+
+div.alert {
+  display: none;
+  width: 400px;
+  min-height: 150px;
+  background: white;
+  color: black;
+  position: fixed;
+  margin: auto;
+  top: 40%;
+  left: 0;
+  right: 0;
+  border-radius: 5px;
+  border: 2px solid #f9f9f9;
+  box-shadow: -3px 3px 2px #f9f9f9;
+}
+
+div.alert > div.title {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #d9d9d9;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+div.alert > div.title > .close {
+  float: right;
+  margin: 3px 5px;
+  border: none;
+  background: none;
+  font-size: 20px;
+  outline: none;
+}
+
+div.alert > div.description {
+  padding: 5px;
+  font-size: 18px;
+  text-align: center;
+}
+
 
 footer {
   background: #212121;
@@ -1156,6 +1262,7 @@ footer > div.phone {
   }
 
   .block#select > div.content > div.buy_form > div.block {
+    min-height: 130px;
     margin: 80px 50px 0 50px;
   }
 
@@ -1215,12 +1322,12 @@ footer > div.phone {
   header > div#head > div#contact {
     display: none;
   }
-  .block#reviews > div.content > div.left {
+  .block#reviews > div.content > button.left {
     width: 60px;
     background-size: 40px 40px;
   }
 
-  .block#reviews > div.content > div.right {
+  .block#reviews > div.content > button.right {
     width: 60px;
     background-size: 40px 40px;
   }

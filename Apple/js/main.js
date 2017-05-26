@@ -1,10 +1,20 @@
+wow = new WOW(
+  {
+    animateClass: 'animated',
+    offset:       100
+  }
+);
+wow.init();
+
 document.getElementById('open-menu').onclick = function() {document.getElementsByTagName('header')[0].id = 'open';}
 document.getElementById('close-menu').onclick = function() {document.getElementsByTagName('header')[0].id = '';}
 
 // local data
 window.global = {};
 window.global.activePhone = {
-  code: 'iphone5s'
+  code: 'iphone5s',
+  price: 15590,
+  rom: '16 ГБ'
 };
 
 // Select iPhone
@@ -30,7 +40,6 @@ $('.button2.selectPhone').click(function(event){
   window.global.activePhone.color = 'black';
   window.global.activePhone.rom = null;
   $('.image.'+window.global.activePhone.code+'_'+window.global.activePhone.color).css({display: 'block'});
-  $('.price_block').css({display: 'none'});
 
   $('#out_price').text('Выберите модель');
   $('#model_name').text('Выберите модель');
@@ -82,8 +91,6 @@ $('.butt.select_rom').click(function(event){
   $('#out_price').text(out_price);
   // get phone name
   $('#model_name').text(model_name);
-  // render price block
-  $('.price_block').css({display: 'block'});
 });
 
 $('.item.select_gift').click(function(event){
@@ -111,6 +118,37 @@ var clearGift = function() {
   var list = $('.select.select_gift').children();
   for (var i = 0; i < list.length; i++) $(list[i]).removeClass('active');
 }
+
+var closePopup = function() {
+  $('#popup').hide();
+  $('.alert').hide();
+}
+
+$('#close_popup').click(closePopup);
+
+$('#buy_phone_form11').click(function() {
+  $('#popup').show();
+  $('.alert').show();
+  /*$.ajax({
+    url: "contact.php",
+    method: 'POST',
+    data: {
+      'username': $('#user_name_form').text(),
+      'number': $('#number_form').text(),
+      'phone': window.global.activePhone.code,
+      'price': window.global.activePhone.price,
+      'rom': window.global.activePhone.rom,
+      'gift': window.global.activePhone.gift
+    },
+    success: function(data) {
+      var title = data.split('|')[0] === 'ok' ? 'Отлично!' : 'Ошибка!';
+      var description = data.split('|')[1]; 
+      $('.alert > .title').html(title);
+      $('.alert > .description').html(description + '<br><br><button class="button" onclick="closePopup()">Отлично!</button>');
+      
+    }
+  });*/
+});
 
 $(document).on('click', 'a[href^="#"]', function(e) {
   // target element id

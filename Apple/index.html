@@ -5,64 +5,66 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" type="text/css" href="css/main.css">
-  <link rel="stylesheet" type="text/css" href="css/fm.revealator.jquery.css">
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/wow.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 </head>
 <body>
 
   <content>
     <div id="header" class="block">
-      <div class="header_text revealator-slideup">
+      <div class="header_text wow bounceInUp">
         <h1>Магазин оригинальной техники Apple</h1>
         <p>Выгодные цены. Доставка в день заказа</p>
         <a class="gotext button" href="#catalog">Товары со скидкой</a>
       </div>
-      <a class="goto" href="#catalog">&nbsp;</a>
     </div>
 
     <div id="catalog" class="block">
-      <div class="content">
-        <h1>Каталог продукции</h1>
+      <div class="content wow bounceInUp">
+        <h1 class="">Каталог продукции</h1>
         <p>Выберите нужную для вас модель iPhone</p>
 
-        <div class="phone_list revealator-slideup">
+        <div class="phone_list ">
           <div class="phone">
             <div class="image iphone5s">&nbsp;</div>
             <div class="name">iPhone 5s</div>
             <div class="price">от 15 590 руб.</div>
-            <button class="button2 selectPhone iphone5s">Выбрать</button>
+            <a href="#select" class="button2 selectPhone iphone5s">Выбрать</a>
           </div>
 
           <div class="phone">
             <div class="image iphone6">&nbsp;</div>
             <div class="name">iPhone 6</div>
             <div class="price">от 22 590 руб.</div>
-            <button class="button2 selectPhone iphone6">Выбрать</button>
+            <a href="#select" class="button2 selectPhone iphone6">Выбрать</a>
           </div>
 
           <div class="phone">
             <div class="image iphone6s">&nbsp;</div>
             <div class="name">iPhone 6s</div>
             <div class="price">от 28 590 руб.</div>
-            <button class="button2 selectPhone iphone6s">Выбрать</button>
+            <a href="#select" class="button2 selectPhone iphone6s">Выбрать</a>
           </div>
 
           <div class="phone">
             <div class="image iphoneSE">&nbsp;</div>
             <div class="name">iPhone SE</div>
             <div class="price">от 27 590 руб.</div>
-            <button class="button2 selectPhone iphoneSE">Выбрать</button>
+            <a href="#select" class="button2 selectPhone iphoneSE">Выбрать</a>
           </div>
           <div class="phone">
             <div class="image iphone7">&nbsp;</div>
             <div class="name">iPhone 7</div>
             <div class="price">от 46 590 руб.</div>
-            <button class="button2 selectPhone iphone7">Выбрать</button>
+            <a href="#select" class="button2 selectPhone iphone7">Выбрать</a>
           </div>
           <div class="phone">
             <div class="image iphone7plus">&nbsp;</div>
             <div class="name">iPhone 7+</div>
             <div class="price">от 50 590 руб.</div>
-            <button class="button2 selectPhone iphone7plus">Выбрать</button>
+            <a href="#select" class="button2 selectPhone iphone7plus">Выбрать</a>
           </div>
         </div>
       </div>
@@ -70,31 +72,31 @@
     </div>
 
     <div id="select" class="block">
-      <div class="content iphone5s">
-        <div class="item phone_color_photos revealator-slideright">
+      <div class="content iphone5s wow bounceInUp">
+        <div class="item phone_color_photos ">
           <h2 class="name">iPhone 5s</h2>
           <div class="image iphone5s_black">&nbsp;</div>
           <div class="image iphone5s_silver" style="display: none;">&nbsp;</div>
           <div class="image iphone5s_gold" style="display: none;">&nbsp;</div>
         </div>
 
-        <div class="buy_form revealator-slideleft">
+        <div class="buy_form ">
           <div class="block">
             <h3>Выберите цвет:</h3>
             <div class="select select_color">
               <div class="butt big_size select_color active" data-color="black">
                 <div class="color black">&nbsp;</div>
-                <div class="name">Black</div>
+                <div class="name">Чёрный оникс</div>
               </div>
 
               <div class="butt big_size select_color" data-color="gold">
                 <div class="color gold">&nbsp;</div>
-                <div class="name">Gold</div>
+                <div class="name">Золотистый</div>
               </div>
 
               <div class="butt big_size select_color" data-color="silver">
                 <div class="color silver">&nbsp;</div>
-                <div class="name">Silver</div>
+                <div class="name">Серебристый</div>
               </div>
             </div>
           </div>
@@ -102,7 +104,7 @@
           <div class="block">
             <h3>Выберите объем памяти:</h3>
             <div class="select select_rom">
-              <div class="butt select_rom" data-price="15590">
+              <div class="butt select_rom active" data-price="15590">
                 <div class="text">16 ГБ</div>
               </div>
 
@@ -125,25 +127,26 @@
               </div>
 
               <div class="item select_gift">
-                <img src="images/selfie.jpg" width="100" height="100">
-                <div class="text">Селфи палка 2</div>
+                <img src="images/glass.jpg" width="100">
+                <div class="text">Защитное стекло</div>
               </div>
 
               <div class="item select_gift">
-                <img src="images/selfie.jpg" width="100" height="100">
-                <div class="text">Селфи палка 3</div>
+                <img src="images/сover.jpg" width="100" height="100">
+                <div class="text">Чехол</div>
               </div>
             </div>
           </div>
 
-          <div class="block price_block " style="display: none">
+
+          <div class="block price_block">
             <h2>Стоимость со скидкой:</h2>
-            <h4><s class="phone_face_price"></s></h4>
+            <h3 class="fake"><s class="phone_face_price">18137 руб.</s></h3>
             <div class="price">
-              <h2 class="phone_real_price"></h2>
+              <h2 class="phone_real_price">16590 руб.</h2>
             </div>
             <div class="buy">
-              <button class="button" type="submit">Заказать сейчас</button>
+              <a href="#buy" class="button">Заказать сейчас</a>
             </div>
           </div>
            
@@ -151,30 +154,30 @@
       </div>
 
       <div class="content iphone6" style="display: none;">
-        <div class="item phone_color_photos revealator-slideright">
+        <div class="item phone_color_photos ">
           <h2 class="name">iPhone 6</h2>
           <div class="image iphone6_black">&nbsp;</div>
           <div class="image iphone6_silver" style="display: none;">&nbsp;</div>
           <div class="image iphone6_gold" style="display: none;">&nbsp;</div>
         </div>
 
-        <div class="buy_form revealator-slideleft">
+        <div class="buy_form ">
           <div class="block">
             <h3>Выберите цвет:</h3>
             <div class="select select_color">
               <div class="butt big_size select_color active" data-color="black">
                 <div class="color black">&nbsp;</div>
-                <div class="name">Black</div>
+                <div class="name">Чёрный оникс</div>
               </div>
 
               <div class="butt big_size select_color" data-color="gold">
                 <div class="color gold">&nbsp;</div>
-                <div class="name">Gold</div>
+                <div class="name">Золотистый</div>
               </div>
 
               <div class="butt big_size select_color" data-color="silver">
                 <div class="color silver">&nbsp;</div>
-                <div class="name">Silver</div>
+                <div class="name">Серебристый</div>
               </div>
             </div>
           </div>
@@ -182,7 +185,7 @@
           <div class="block">
             <h3>Выберите объем памяти:</h3>
             <div class="select select_rom">
-              <div class="butt select_rom" data-price="22590">
+              <div class="butt select_rom active" data-price="22590">
                 <div class="text">16 ГБ</div>
               </div>
 
@@ -205,25 +208,26 @@
               </div>
 
               <div class="item select_gift">
-                <img src="images/selfie.jpg" width="100" height="100">
-                <div class="text">Селфи палка 2</div>
+                <img src="images/glass.jpg" width="100" height="83">
+                <div class="text">Защитное стекло</div>
               </div>
 
               <div class="item select_gift">
-                <img src="images/selfie.jpg" width="100" height="100">
-                <div class="text">Селфи палка 3</div>
+                <img src="images/сover.jpg" width="100" height="100">
+                <div class="text">Чехол</div>
               </div>
             </div>
           </div>
 
-          <div class="block price_block" style="display: none">
+
+          <div class="block price_block">
             <h2>Стоимость со скидкой:</h2>
-            <h4><s class="phone_face_price"></s></h4>
+            <h3><s class="phone_face_price">25137 руб.</s></h3>
             <div class="price">
-              <h2 class="phone_real_price"></h2>
+              <h2 class="phone_real_price">22590 руб.</h2>
             </div>
             <div class="buy">
-              <button class="button" type="submit">Заказать сейчас</button>
+              <a href="#buy" class="button">Заказать сейчас</a>
             </div>
           </div>
            
@@ -231,7 +235,7 @@
       </div>
 
       <div class="content iphone6s" style="display: none;">
-        <div class="item phone_color_photos revealator-slideright">
+        <div class="item phone_color_photos ">
           <h2 class="name">iPhone 6s</h2>
           <div class="image iphone6s_black">&nbsp;</div>
           <div class="image iphone6s_silver" style="display: none;">&nbsp;</div>
@@ -239,28 +243,28 @@
           <div class="image iphone6s_pink" style="display: none;">&nbsp;</div>
         </div>
 
-        <div class="buy_form revealator-slideleft">
+        <div class="buy_form ">
           <div class="block">
             <h3>Выберите цвет:</h3>
             <div class="select select_color">
               <div class="butt big_size select_color active" data-color="black">
                 <div class="color black">&nbsp;</div>
-                <div class="name">Black</div>
+                <div class="name">Чёрный оникс</div>
               </div>
 
               <div class="butt big_size select_color" data-color="gold">
                 <div class="color gold">&nbsp;</div>
-                <div class="name">Gold</div>
+                <div class="name">Золотистый</div>
               </div>
 
               <div class="butt big_size select_color" data-color="silver">
                 <div class="color silver">&nbsp;</div>
-                <div class="name">Silver</div>
+                <div class="name">Серебристый</div>
               </div>
 
               <div class="butt big_size select_color" data-color="pink">
                 <div class="color pink">&nbsp;</div>
-                <div class="name">Pink</div>
+                <div class="name">Розовый</div>
               </div>
             </div>
           </div>
@@ -268,7 +272,7 @@
           <div class="block">
             <h3>Выберите объем памяти:</h3>
             <div class="select select_rom">
-              <div class="butt select_rom" data-price="28590">
+              <div class="butt select_rom active" data-price="28590">
                 <div class="text">16 ГБ</div>
               </div>
 
@@ -295,25 +299,26 @@
               </div>
 
               <div class="item select_gift">
-                <img src="images/selfie.jpg" width="100" height="100">
-                <div class="text">Селфи палка 2</div>
+                <img src="images/glass.jpg" width="100" height="83">
+                <div class="text">Защитное стекло</div>
               </div>
 
               <div class="item select_gift">
-                <img src="images/selfie.jpg" width="100" height="100">
-                <div class="text">Селфи палка 3</div>
+                <img src="images/сover.jpg" width="100" height="100">
+                <div class="text">Чехол</div>
               </div>
             </div>
           </div>
 
-          <div class="block price_block" style="display: none">
+
+          <div class="block price_block">
             <h2>Стоимость со скидкой:</h2>
-            <h4><s class="phone_face_price"></s></h4>
+            <h3><s class="phone_face_price">31137 руб.</s></h3>
             <div class="price">
-              <h2 class="phone_real_price"></h2>
+              <h2 class="phone_real_price">28590 руб.</h2>
             </div>
             <div class="buy">
-              <button class="button" type="submit">Заказать сейчас</button>
+              <a href="#buy" class="button">Заказать сейчас</a>
             </div>
           </div>
            
@@ -321,7 +326,7 @@
       </div>
 
       <div class="content iphoneSE" style="display: none;">
-        <div class="item phone_color_photos revealator-slideright">
+        <div class="item phone_color_photos ">
           <h2 class="name">iPhone SE</h2>
           <div class="image iphoneSE_black">&nbsp;</div>
           <div class="image iphoneSE_silver" style="display: none;">&nbsp;</div>
@@ -329,28 +334,28 @@
           <div class="image iphoneSE_pink" style="display: none;">&nbsp;</div>
         </div>
 
-        <div class="buy_form revealator-slideleft">
+        <div class="buy_form ">
           <div class="block">
             <h3>Выберите цвет:</h3>
             <div class="select select_color">
               <div class="butt big_size select_color active" data-color="black">
                 <div class="color black">&nbsp;</div>
-                <div class="name">Black</div>
+                <div class="name">Чёрный оникс</div>
               </div>
 
               <div class="butt big_size select_color" data-color="gold">
                 <div class="color gold">&nbsp;</div>
-                <div class="name">Gold</div>
+                <div class="name">Золотистый</div>
               </div>
 
               <div class="butt big_size select_color" data-color="silver">
                 <div class="color silver">&nbsp;</div>
-                <div class="name">Silver</div>
+                <div class="name">Серебристый</div>
               </div>
 
               <div class="butt big_size select_color" data-color="pink">
                 <div class="color pink">&nbsp;</div>
-                <div class="name">Pink</div>
+                <div class="name">Розовый</div>
               </div>
             </div>
           </div>
@@ -358,7 +363,7 @@
           <div class="block">
             <h3>Выберите объем памяти:</h3>
             <div class="select select_rom">
-              <div class="butt select_rom" data-price="27590">
+              <div class="butt select_rom active" data-price="27590">
                 <div class="text">16 ГБ</div>
               </div>
 
@@ -377,25 +382,26 @@
               </div>
 
               <div class="item select_gift">
-                <img src="images/selfie.jpg" width="100" height="100">
-                <div class="text">Селфи палка 2</div>
+                <img src="images/glass.jpg" width="100" height="83">
+                <div class="text">Защитное стекло</div>
               </div>
 
               <div class="item select_gift">
-                <img src="images/selfie.jpg" width="100" height="100">
-                <div class="text">Селфи палка 3</div>
+                <img src="images/сover.jpg" width="100" height="100">
+                <div class="text">Чехол</div>
               </div>
             </div>
           </div>
 
-          <div class="block price_block" style="display: none">
+
+          <div class="block price_block">
             <h2>Стоимость со скидкой:</h2>
-            <h4><s class="phone_face_price"></s></h4>
+            <h3><s class="phone_face_price">30137 руб.</s></h3>
             <div class="price">
-              <h2 class="phone_real_price"></h2>
+              <h2 class="phone_real_price">27590 руб.</h2>
             </div>
             <div class="buy">
-              <button class="button" type="submit">Заказать сейчас</button>
+              <a href="#buy" class="button">Заказать сейчас</a>
             </div>
           </div>
            
@@ -403,7 +409,7 @@
       </div>
 
       <div class="content iphone7" style="display: none;">
-        <div class="item phone_color_photos revealator-slideright">
+        <div class="item phone_color_photos ">
           <h2 class="name">iPhone 7</h2>
           <div class="image iphone7_black">&nbsp;</div>
           <div class="image iphone7_silver" style="display: none;">&nbsp;</div>
@@ -412,33 +418,33 @@
           <div class="image iphone7_pink" style="display: none;">&nbsp;</div>
         </div>
 
-        <div class="buy_form revealator-slideleft">
+        <div class="buy_form ">
           <div class="block">
             <h3>Выберите цвет:</h3>
             <div class="select select_color">
               <div class="butt big_size select_color active" data-color="black">
                 <div class="color black">&nbsp;</div>
-                <div class="name">Black</div>
+                <div class="name">Чёрный оникс</div>
               </div>
 
               <div class="butt big_size select_color" data-color="gold">
                 <div class="color gold">&nbsp;</div>
-                <div class="name">Gold</div>
+                <div class="name">Золотистый</div>
               </div>
 
               <div class="butt big_size select_color" data-color="silver">
                 <div class="color silver">&nbsp;</div>
-                <div class="name">Silver</div>
+                <div class="name">Серебристый</div>
               </div>
 
               <div class="butt big_size select_color" data-color="grey">
                 <div class="color grey">&nbsp;</div>
-                <div class="name">Grey</div>
+                <div class="name">Серый космос</div>
               </div>
 
               <div class="butt big_size select_color" data-color="pink">
                 <div class="color pink">&nbsp;</div>
-                <div class="name">Pink</div>
+                <div class="name">Розовый</div>
               </div>
             </div>
           </div>
@@ -446,7 +452,7 @@
           <div class="block">
             <h3>Выберите объем памяти:</h3>
             <div class="select select_rom">
-              <div class="butt select_rom" data-price="46590">
+              <div class="butt select_rom active" data-price="46590">
                 <div class="text">32 ГБ</div>
               </div>
 
@@ -469,25 +475,26 @@
               </div>
 
               <div class="item select_gift">
-                <img src="images/selfie.jpg" width="100" height="100">
-                <div class="text">Селфи палка 2</div>
+                <img src="images/glass.jpg" width="100" height="83">
+                <div class="text">Защитное стекло</div>
               </div>
 
               <div class="item select_gift">
-                <img src="images/selfie.jpg" width="100" height="100">
-                <div class="text">Селфи палка 3</div>
+                <img src="images/сover.jpg" width="100" height="100">
+                <div class="text">Чехол</div>
               </div>
             </div>
           </div>
 
-          <div class="block price_block" style="display: none">
+
+          <div class="block price_block">
             <h2>Стоимость со скидкой:</h2>
-            <h4><s class="phone_face_price"></s></h4>
+            <h3><s class="phone_face_price">49137 руб.</s></h3>
             <div class="price">
-              <h2 class="phone_real_price"></h2>
+              <h2 class="phone_real_price">46590 руб.</h2>
             </div>
             <div class="buy">
-              <button class="button" type="submit">Заказать сейчас</button>
+              <a href="#buy" class="button">Заказать сейчас</a>
             </div>
           </div>
            
@@ -495,7 +502,7 @@
       </div>
 
       <div class="content iphone7plus" style="display: none;">
-        <div class="item phone_color_photos revealator-slideright">
+        <div class="item phone_color_photos ">
           <h2 class="name">iPhone 7+</h2>
           <div class="image iphone7plus_black">&nbsp;</div>
           <div class="image iphone7plus_silver" style="display: none;">&nbsp;</div>
@@ -504,33 +511,33 @@
           <div class="image iphone7plus_pink" style="display: none;">&nbsp;</div>
         </div>
 
-        <div class="buy_form revealator-slideleft">
+        <div class="buy_form ">
           <div class="block">
             <h3>Выберите цвет:</h3>
             <div class="select select_color">
               <div class="butt big_size select_color active" data-color="black">
                 <div class="color black">&nbsp;</div>
-                <div class="name">Black</div>
+                <div class="name">Чёрный оникс</div>
               </div>
 
               <div class="butt big_size select_color" data-color="gold">
                 <div class="color gold">&nbsp;</div>
-                <div class="name">Gold</div>
+                <div class="name">Золотистый</div>
               </div>
 
               <div class="butt big_size select_color" data-color="silver">
                 <div class="color silver">&nbsp;</div>
-                <div class="name">Silver</div>
+                <div class="name">Серебристый</div>
               </div>
 
               <div class="butt big_size select_color" data-color="grey">
                 <div class="color grey">&nbsp;</div>
-                <div class="name">Grey</div>
+                <div class="name">Серый космос</div>
               </div>
 
               <div class="butt big_size select_color" data-color="pink">
                 <div class="color pink">&nbsp;</div>
-                <div class="name">Pink</div>
+                <div class="name">Розовый</div>
               </div>
             </div>
           </div>
@@ -538,7 +545,7 @@
           <div class="block">
             <h3>Выберите объем памяти:</h3>
             <div class="select select_rom">
-              <div class="butt select_rom" data-price="50590">
+              <div class="butt select_rom active" data-price="50590">
                 <div class="text">32 ГБ</div>
               </div>
 
@@ -561,25 +568,25 @@
               </div>
 
               <div class="item select_gift">
-                <img src="images/selfie.jpg" width="100" height="100">
-                <div class="text">Селфи палка 2</div>
+                <img src="images/glass.jpg" width="100" height="83">
+                <div class="text">Защитное стекло</div>
               </div>
 
               <div class="item select_gift">
-                <img src="images/selfie.jpg" width="100" height="100">
-                <div class="text">Селфи палка 3</div>
+                <img src="images/сover.jpg" width="100" height="100">
+                <div class="text">Чехол</div>
               </div>
             </div>
           </div>
 
-          <div class="block price_block" style="display: none">
+          <div class="block price_block">
             <h2>Стоимость со скидкой:</h2>
-            <h4><s class="phone_face_price"></s></h4>
+            <h3><s class="phone_face_price">53137 руб.</s></h3>
             <div class="price">
-              <h2 class="phone_real_price"></h2>
+              <h2 class="phone_real_price">50590 руб.</h2>
             </div>
             <div class="buy">
-              <button class="button" type="submit">Заказать сейчас</button>
+              <a href="#buy" class="button">Заказать сейчас</a>
             </div>
           </div>
            
@@ -588,9 +595,9 @@
     </div>
 
     <div id="vantage" class="block">
-      <div class="left_image revealator-slideright">&nbsp;</div>
-      <div class="right_image revealator-slideleft">&nbsp;</div>
-      <div class="content revealator-slideup">
+      <div class="left_image wow bounceInUp">&nbsp;</div>
+      <div class="right_image wow bounceInUp">&nbsp;</div>
+      <div class="content wow bounceInUp">
         <h2>Преимущество нашего магазина</h2>
         <div class="block">
           <div class="line">
@@ -622,7 +629,7 @@
     </div>
 
     <div id="benefit" class="block">
-      <div class="content revealator-slideup">
+      <div class="content wow bounceInUp">
         <h2>Покупая iPhone у нас вы получаете</h2>
         <div class="block">
           <div class="big_line">
@@ -661,8 +668,8 @@
       </div>
     </div>
 
-    <div id="guarantee" class="block revealator-slideup">
-      <div class="content ">
+    <div id="guarantee" class="block ">
+      <div class="content wow bounceInUp">
         <div class="left">
           <h2>Гарантия и поддержка</h2>
           <h3>Гарантия на всю продукцию 1 год.</h3>
@@ -674,29 +681,29 @@
     </div>
 
     <div id="delivery" class="block">
-      <div class="content">
-        <h2 class="revealator-slideup">Доставка и самовывоз</h2>
-        <h3 class="revealator-slideup">Быстро и надежно</h3>
+      <div class="content wow bounceInUp">
+        <h2 class="">Доставка и самовывоз</h2>
+        <h3 class="">Быстро и надежно</h3>
         <div class="block">
           <div class="line">
-            <div class="item revealator-slideright">
+            <div class="item ">
               <div class="icon navigation">&nbsp;</div>
               <div class="text">Доставка до адреса</div>
             </div>
-            <div class="item revealator-slideleft">
+            <div class="item ">
               <div class="icon map">&nbsp;</div>
               <div class="text">Доставка до метро бесплатно</div>
             </div>
           </div>
         </div>
-        <div class="text revealator-slideup">
+        <div class="text ">
           В целях безопасности доставка осуществляется на домашние и робочие адреса получателя при наличии стационарного телефона.<br>Вы можете отменить заказ до приезда курьера. После приезда курьера вы обязуетесь оплатить доставку вне зависимости от принятия товара.<br>Притензии по внешнему виду и комплектации принимаются только в присутствии курьера. 
         </div>
       </div>
     </div>
 
     <div id="about" class="block">
-      <div class="content revealator-slideup">
+      <div class="content wow bounceInUp">
         <h2>Наша компания</h2>
         <div class="text">Наш магазин существует с 2014 года и специализируется на оптоворозничной торговле
 техникой Аррlе. С нами вы будете уверенны в том, что покупаете понастоящему
@@ -708,41 +715,179 @@
     </div>
 
     <div id="reviews" class="block">
-      <div class="content">
-        <h2 class="revealator-slideup">Отзывы покупателей el apple</h2>
-        <div class="left item revealator-slideleft">&nbsp;</div>
-        <div class="right item revealator-slideright">&nbsp;</div>
-        <div class="reviews revealator-slideup">
+      <div class="content wow bounceInUp">
+        <h2 class="">Отзывы покупателей el apple</h2>
+        <button class="left item ">&nbsp;</button>
+        <button class="right item ">&nbsp;</button>
+        <div class="reviews ">
+
           <div class="review">
             <img src="users/otz1.png">
-            <h3>Имя</h3>
+            <h3>Эдгар</h3>
             <div class="social">
-              <a href="#" class="instagram">&nbsp;</a>
             </div>
             <div class="text">
-              This is description on review
+              Приобрел iphone 6s за вполне приемлемую цену. Наклеил защитное стекло, одел чехол ( защитное стекло было в подарок от магазина, что послужило большим плюсом, все знают проблемы с продукцией Apple в этом плане) и ни разу не разочаровался в своем приобретении- на мой взгляд в нем все именно так, как должно быть в телефоне (отличный звук, работает как часы, установлена ios 10.2.1 и это возможно самая не лагающая операционная систма,очень радует постоянная оптимизация приложений), с момента покупки телефон самовольно ни разу не выключался (вспоминаю свои гаджеты на os андроид) и не зависал в приложениях. Смартфон постоянно в работе (бесконечные звонки, серфинг в интернете и социальных сетях, печатать одно удовольствие) и знаете иного не хочется- разве что iphone 8s, но подождём до осени 2017 и посмотрим на характеристики. 
+Отдельно порадовала функция данного магазина, как доставка на дом за смешную цену, как для занятого человека-очень ценный аспект. 
             </div>
           </div>
 
           <div class="review">
             <img src="users/otz2.png">
-            <h3 class="name">Имя</h3>
+            <h3 class="name">Юля</h3>
             <div class="social">
-              <a href="#" class="instagram">&nbsp;</a>
+              <a href="https://vk.com/otorvayll?w=wall109791918_6075" target="_blank" class="vkontakte">&nbsp;</a>
             </div>
             <div class="text">
-              This is description on review
+              Как для поклонницы продукции яблока приобретение новой версии айфона даже не рассматривалось. Точно-Да! Выбор пал на данный магазин, чему я несказанно рада! Оперативная доставка, качественный продукт, за клубную карту отдельное спасибо   
+Взяла максимальное количество памяти, качество картинки, новые функции, быстрота реакции поражает)
+Спасибо el apple, за отличную работу! 
+обязательно буду рекомендовать своим друзьям и знакомым! 
             </div>
           </div>
 
           <div class="review">
             <img src="users/otz3.png">
-            <h3>Имя</h3>
+            <h3>Василиса</h3>
             <div class="social">
-              <a href="#" class="instagram">&nbsp;</a>
             </div>
             <div class="text">
-              This is description on review
+              Очень довольна, в принципе и прежние модели IPhone, были также на высоком уровне. С каждым годом компания становится совершеннее и совершение. 
+Приятным бонусом был пункт самовывоза. 
+С условием, что живу недалеко от пункта скидку в -500₽ было очень приятно получить. 
+Спасибо за быстроту отдачи и удачи вам!
+            </div>
+          </div>
+
+          <div class="review">
+            <img src="users/otz4.png">
+            <h3>Настя</h3>
+            <div class="social">
+            </div>
+            <div class="text">
+              Долго думала над покупкой iPad Air, взвешивала все + и -. В итоге решилась... и ни капельки не пожалела, отзывчивый курьер магазина все объяснил и рассказал как пользоваться (для меня хозяйки всех техники на андройде, iOS был дремучим лесом)) за что огромное спасибо! Пользуюсь уже больше месяца и не жалею о приобретении.
+            </div>
+          </div>
+
+          <div class="review">
+            <img src="users/otz5.png">
+            <h3>Лена</h3>
+            <div class="social">
+            </div>
+            <div class="text">
+              Покупала IPad в подарок подруге! Качество фотографий на обеих камерах супер! Опробовали сразу же))
+Отдельно порадовала селфи-палка в подарок 
+Отличный дизайн! И звук!
+Спасибо большое el apple, за то что выручили в трудную минуту. (Заказ сформировала днём, вечером уже забрала iPad) очень оперативно! Подруга была счастлива. А это главное!
+            </div>
+          </div>
+
+          <div class="review">
+            <img src="users/otz6.png">
+            <h3>Степан</h3>
+            <div class="social">
+              <a href="https://vk.com/kiminchizhi?w=wall10785486_528" target="_blank" class="vkontakte">&nbsp;</a>
+            </div>
+            <div class="text">
+              Купил в этом магазине Афоню 6s своей подруге. Цена на телефон в магазине была много дешевле чем у официалов и дешевле чем во многих интернет магазинах, поэтому на доставку уповать не стал, забирал телефон самовывозом чтобы всё проверить. Всё проверил, пробил Имей, телефон оригинальный не реплика; всё отлично, магазином остался доволен.
+            </div>
+          </div>
+
+          <div class="review">
+            <img src="users/otz7.png">
+            <h3>Лера</h3>
+            <div class="social">
+              <a href="https://vk.com/plashechkina?w=wall286851504_403" target="_blank" class="vkontakte">&nbsp;</a>
+            </div>
+            <div class="text">
+              Купила IPad Air 2. Давольно качеством, хороший сервис, порадовала доставка на дом. Приемлемая цена для такого дорогого устройства. При этом ничего не тормозит, быстрая реакция планшета на любое касание! Спасибо большое, отдельное спасибо за клубную карту, буду иметь в виду при выборе подарка для родных! 
+            </div>
+          </div>
+
+          <div class="review">
+            <img src="users/otz8.png">
+            <h3>Оля</h3>
+            <div class="social">
+              <a href="https://vk.com/id_ro_lana?w=wall416230716_11/all" target="_blank" class="vkontakte">&nbsp;</a>
+            </div>
+            <div class="text">
+              Айпад не заменим в учебе. Модельное только записывать лекции, рисовать графики, читать литературу по предметам. Но и сразу же искать информацию необходимую на парах! Решила купить новую версию и не ошиблась с выбором! Быстро реагирует на любой запрос, не лагает! Интернет магазин посоветовала подруга, за что ей огромное спасибо! Отличный сервис и быстро отвечают операторы! Процветания вашему магазину
+            </div>
+          </div>
+
+          <div class="review">
+            <img src="users/otz9.png">
+            <h3>Артур</h3>
+            <div class="social">
+            </div>
+            <div class="text">
+              Пару лет назад купил айфон 5 и считал себя счастливым. Хотя до этого был ярым поклонником платформы Андройд . Очень понравилось многоплановость телефона, потом стало не хватать планшета, решил опять же перейти на эпл. Купил айпад про 9.7. Очень доволен, вещь стоящая своих денег! Сразу же наклеил защитное стекло, которое было в подарок от магазина! Чему был очень рад! Пользуюсь постоянно, собираюсь всех домашних пересадить с Андройда на Эпл. 
+В целом по планшету: надёжен в работе, удобен, моим потребностям удовлетворяет полностью.
+            </div>
+          </div>
+
+          <div class="review">
+            <img src="users/otz10.png">
+            <h3>Мадина</h3>
+            <div class="social">
+              <a href="https://vk.com/id154270604?w=wall154270604_349" target="_blank" class="vkontakte">&nbsp;</a>
+            </div>
+            <div class="text">
+              Тут наверно и говорить не о чем. Apple и все сказано. Для работы и учебы, для игр, для просмотра сериалов, да и для свободного сёрфинга на веб страницах интернета- выбор очевиден- IPad! Решила купить mini 2. Оперативная система супер, качество картинки на высшем уровне, спасибо за приятные бонусы. Буду иметь в виду ведь близких много, а угодить всем можно универсальным способом-покупкой гаджета!
+            </div>
+          </div>
+
+          <div class="review">
+            <img src="users/otz11.png">
+            <h3>Юля</h3>
+            <div class="social">
+            </div>
+            <div class="text">
+              Купила 5 SE. Выбрала эту модель тк 6 слишком большой и неудобен в руке. А в этом вся начинка от 6, а дизайн 5. Очень шустрый и резвый процессор, обе камеры работают как часы, теперь памяти точно хватит на огромное количество селфи и видео)) батарея намного больше по объёму ( у молодого человека 5s, мой даёт ему фору)) 
+И конечно цвет Rose Gold покорил мое сердце! Спасибо за приятный бонус в виде чехла))
+            </div>
+          </div>
+
+          <div class="review">
+            <img src="users/otz12.png">
+            <h3>Даниил</h3>
+            <div class="social">
+            </div>
+            <div class="text">
+              Купили подарок маме на 8 марта IPad mini 4. До этого она вечно таскала везде с собой книжки, уж очень любит читать) конечно было тяжеловато таскать по томику Достоевского каждый день. Поэтому решил облегчить маме жизнь. 
+Не смотря на то, что когда курьер привёз планшет меня не было дома, но курьер все объяснил доступным языком и рассказал ей о всех возможностях! Пришёл домой, мама во всю уже переписывается с подругами! Мама довольна, а это главное
+            </div>
+          </div>
+
+          <div class="review">
+            <img src="users/otz13.png">
+            <h3>Злата</h3>
+            <div class="social">
+            </div>
+            <div class="text">
+              Купила айфон 7 Plus. В первую очередь хочу сказать, что мне понравилась камера, фотографирует также на кути на профессиональном фотоаппарате. Довольна качеством обслуживания. Пользуюсь уже почти месяц, работает все хорошо. Не смотря на цены, которые меньше чем в официальном магазине. Работают очень приятные люди
+            </div>
+          </div>
+
+          <div class="review">
+            <img src="users/otz14.png">
+            <h3>Мадина</h3>
+            <div class="social">
+            </div>
+            <div class="text">
+              До этого пользовалась обыкновенной Nokia, купила айфон 6. Никогда не думала, что сенсорный телефон будет настолько удобным. Быстро разобралась в пользовании. В комплект, как бонус от магазина, было защитное стекло. Теперь рабочую почту стало проверять намного удобнее. 
+            </div>
+          </div>
+
+          <div class="review">
+            <img src="users/otz15.png">
+            <h3>Максим</h3>
+            <div class="social">
+              <a href="https://vk.com/id154932246?w=wall154932246_1202/all" target="_blank" class="vkontakte">&nbsp;</a>
+            </div>
+            <div class="text">
+              До приобретения айпад про 12.9 был планшет sumsung. Но их сравнивать очном сложно. Эта модель хорошо поддерживает игры, неплохая графика. Доволен звуковым проигрыванием музыки, хорошо поддерживает заряд. Легко переносной, можно спокойно кинуть в рюкзак. 
+В дальнейшем планирую купить док станцию.
             </div>
           </div>
         </div>
@@ -750,16 +895,16 @@
     </div>
 
     <div id="buy" class="block">
-      <div class="content">
-        <h2 class="revealator-slideup">Оформление заказа</h2>
-        <div class="description revealator-slideup">Заполните форму, и наши менеджеры свяжутся с вами в течении часа</div>
+      <div class="content wow bounceInUp">
+        <h2 class="">Оформление заказа</h2>
+        <div class="description ">Заполните форму, и наши менеджеры свяжутся с вами в течении часа</div>
         <div class="form">
-          <div class="block revealator-slideright">
-            <input type="text" class="mini-user-icon" placeholder="Ваше имя">
-            <input type="text" class="mini-smartphone-icon" placeholder="Контактный телефон">
-            <button>Отправить</button>
+          <div class="block ">
+            <input type="text" class="mini-user-icon" id="user_name_form" placeholder="Ваше имя">
+            <input type="text" class="mini-smartphone-icon" id="number_form" placeholder="Контактный телефон">
+            <button id="buy_phone_form11">Отправить</button>
           </div>
-          <div class="block revealator-slideleft">
+          <div class="block ">
             <div class="item">
               <div class="name">Выбранная модель</div>
               <div class="text" id="model_name">Выберите модель</div>
@@ -780,13 +925,13 @@
     </div>
 
     <div id="map" class="block">
-      <div class="content revealator-slideup">
+      <div class="content wow bounceInUp">
         <h2>Контакты</h2>
         <div class="text">
           г.Москва, Багратионовский проезд д.7,<br>
           ТЦ "Рубин" 1 этаж<br>
           Режим роботы: Ежедневно с 9:30 до 21:00<br>
-          +7(910)-002-25-05
+          +7(968)-590-60-58
         </div>
       </div>
       <iframe class="revealator-fade" 
@@ -802,15 +947,18 @@
   <footer id="footer">
     <div class="copy">&copy; 2016 Copyright.</div>
     <div class="author">Розработка Fame-us.ru</div>
-    <div class="phone">+7(910)-002-25-05</div>
+    <div class="phone">+7(968)-590-60-58</div>
   </footer>
+
+  <div id="popup">&nbsp;</div>
+  <div class="alert"><div class="title"></div><div class="description"></div></div>
 
   <header>
     <div id="head">
       <a href="#" id="logo"></a>
 
       <div id="contact">
-        <a class="item">8-968-590-60-58</a>
+        <a class="item">+7(968)-590-60-58</a>
       </div>
 
 
@@ -818,12 +966,12 @@
         <div class="list">
           <a class="item" href="#catalog">Каталог</a>
           <a class="item" href="#guarantee">Гарантия и поддержка</a>
-          <a class="item" href="#about">О компании</a>
           <a class="item" href="#delivery">Доставка</a>
+          <a class="item" href="#about">О компании</a>
           <a class="item" href="#reviews">Отзывы</a>
           <a class="item" href="#buy">Контакты</a>
           <br>
-          <a class="item hide">8-968-590-60-58</a>
+          <a class="item hide">+7(968)-590-60-58</a>
         </div>
       </div>
 
@@ -831,8 +979,8 @@
       <button id="close-menu">Закрыть</button>
     </div>
   </header>
-  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript" src="js/fm.revealator.jquery.min.js"></script>
+  
   <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/block-reviews.js"></script>
 </body>
 </html>
